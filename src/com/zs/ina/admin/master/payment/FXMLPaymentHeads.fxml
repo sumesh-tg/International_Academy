@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="342.0" prefWidth="551.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.admin.master.payment.FXMLPaymentHeadsController">
+   <stylesheets>
+      <URL value="@fxmlpaymentheads.css" />
+   </stylesheets>
+   <children>
+      <VBox layoutX="5.0" layoutY="5.0" prefHeight="261.0" prefWidth="425.0" spacing="5.0" style="-fx-border-color: #08468F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="144.0048828125" layoutY="31.5" prefHeight="33.0" style="-fx-background-color: #08468F;">
+               <children>
+                  <Label layoutX="144.0048828125" layoutY="31.5" styleClass="fonttitlelbl" text="Payment Heads" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="11.0" layoutY="49.0" maxWidth="1.7976931348623157E308">
+               <children>
+                  <Label layoutX="41.0" layoutY="82.0" prefHeight="16.0" prefWidth="134.0" styleClass="fontlbl" text="Add Payment Head">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="261.0" prefWidth="549.0">
+               <children>
+                  <Label layoutX="109.0" layoutY="21.0" prefHeight="16.0" prefWidth="103.0" styleClass="fontlbl" text="Payment Head">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPaymentHead" layoutX="258.0" layoutY="16.0" prefHeight="25.0" prefWidth="213.0" styleClass="fontlbl" />
+                  <Button fx:id="btnClear" layoutX="393.0" layoutY="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="button-submit" text="Clear">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSave" layoutX="299.0" layoutY="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="button-submit" text="Save">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+<AnchorPane layoutX="20.0" layoutY="127.0" prefHeight="127.0" prefWidth="255.0" style="-fx-border-color: #08468F;">
+<children>
+                  <Label layoutX="15.0" layoutY="6.0" prefHeight="16.0" prefWidth="142.0" styleClass="fontlbl" text="Disable Payment Head">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnDisable" layoutX="150.0" layoutY="79.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="button-submit" text="Disable" />
+                  <ComboBox fx:id="cmbPaymentEnable" layoutX="15.0" layoutY="37.0" prefHeight="25.0" prefWidth="213.0" />
+</children>
+<padding>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</padding>
+</AnchorPane>
+<AnchorPane layoutX="276.0" layoutY="127.0" style="-fx-border-color: #08468F;">
+<children><Label layoutX="20.0" layoutY="6.0" prefHeight="16.0" prefWidth="142.0" styleClass="fontlbl" text="Enable Payment Head">
+<font>
+<Font name="Times New Roman Bold" size="14.0" />
+</font>
+</Label><Button fx:id="btnEnable" layoutX="155.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="button-submit" text="Enable" /><ComboBox fx:id="cmbPaymentDisable" layoutX="20.0" layoutY="37.0" prefHeight="25.0" prefWidth="213.0" />
+</children>
+<padding>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</padding>
+</AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

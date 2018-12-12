@@ -1,0 +1,8 @@
+.mainFxmlClass{
+    -fx-border-color: green;
+    -fx-background-color: #ccffcc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-image-insets:5;
+    -fx-background-insets:3;
+}

@@ -1,0 +1,23 @@
+create or replace view hyperlink_count_counselor_followup as
+SELECT 'Total Enquiries' as status, -1 as Status_id, 'D' as tabname,enq.assigned_to as user,  count(1)AS Total_count,
+enq.assigned_branch as branch
+from history_enquiry_assigning_tbl enq WHERE enq.assigned_date>=NOW() AND 
+ DATE(assigned_date) < DATE_ADD(CURRENT_DATE(),INTERVAL 1 DAY) AND enq.current_status<>'Assessment Pending'  
+AND enq.latest_flag='y'and enq.assigned_by<>'Self Assigned'
+group by enq.assigned_to  
+UNION
+select m.app_status AS `status` , m.app_status_id as Status_id, 'A' as tabname, heat.assigned_to AS user,
+ sum( case when m.date_reason_enable=1 THEN 
+		(CASE WHEN CURDATE()=DATE(heat.assigned_date) THEN 1 ELSE 0 END)ELSE
+		(CASE WHEN CURDATE()=DATE(heat.assigned_date) THEN 1 ELSE 0 END)END)AS Total_count,
+heat.assigned_branch AS branch
+from mastertbl_app_status m
+RIGHT OUTER JOIN history_enquiry_assigning_tbl heat ON m.app_status_id=heat.current_status
+where DATE(heat.assigned_date) is not null AND heat.current_status<>'Assessment Pending' 
+and heat.assigned_by<>'Self Assigned' 
+and m.date_reason_enable=1
+and heat.assigned_date>=NOW()
+AND DATE(assigned_date) < DATE_ADD(CURRENT_DATE(),INTERVAL 1 DAY) 
+AND heat.latest_flag='y'
+group by heat.assigned_to,m.app_status, m.app_status_id 
+having Total_count > 0 

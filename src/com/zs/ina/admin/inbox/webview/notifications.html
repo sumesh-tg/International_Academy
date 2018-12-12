@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title> add notifications</title>
+        <script src="jquery.1.11.js"></script>
+        <script src="jquerymigrate.js"></script>
+        <script src="jquery.vticker.js"></script>
+        <script src="main.js"></script>
+        <script language="javascript">
+            function updateOffer(title, content, cdate, edate) {
+                var ul = document.getElementById("odata");
+                var li = document.createElement("li");
+                var h4 = document.createElement("h4");
+                var p = document.createElement("p");
+                // li.appendChild(document.createTextNode(content));
+                h4.appendChild(document.createTextNode(title));
+                p.appendChild(document.createTextNode(content));
+                ul.appendChild(li);
+                li.appendChild(h4);
+                li.appendChild(p);
+                li.setAttribute("class", "datalist");
+                console.log(title);
+            }
+            function updateNotice(title, content, cdate, edate) {
+                var ul = document.getElementById("ndata");
+                var li = document.createElement("li");
+                var h4 = document.createElement("h4");
+                var p = document.createElement("p");
+                // li.appendChild(document.createTextNode(content));
+                h4.appendChild(document.createTextNode(title));
+                p.appendChild(document.createTextNode(content));
+                ul.appendChild(li);
+                li.appendChild(h4);
+                li.appendChild(p);
+                li.setAttribute("class", "datalist");
+            }
+            function removeLi() {
+                var myList = document.getElementById('ndata');
+                myList.parentNode.removeChild(myList);
+            }
+        </script>
+        <style>
+
+            li {
+                color:  green;
+                border-top: 1px dashed rgba(0, 0, 0, 0.2);
+            }
+            li:nth-child(odd) {
+                color:  red; 
+            }
+            .title{
+                text-align: center;
+                margin-top: 6px;
+            }
+            .data{
+                list-style: outside none none;
+                text-align: center;
+                position: relative !important;
+            }
+            li h4{
+                padding: 4px;
+            }
+            li p{
+                padding: 4px;
+            }
+            body{
+                overflow-x: hidden;
+                overflow-y: hidden;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-repeat: no-repeat;
+            }
+            .notice{
+                background: #f5f5f5; /* Old browsers */
+             //   background:  linear-gradient(to bottom, #edf9fd 0%,#caf0fc 100%);
+                z-index: -1;
+                height: 235px !important;
+            }
+         
+        </style>
+    </head>
+    <body>
+
+        <div class="section noticediv" id="noticediv" style="display:none">
+          <!--  <div class="ribbon"><div class="ribbon-stitches-top"></div><strong class="ribbon-content"><h1>Notice Board</h1></strong><div class="ribbon-stitches-bottom"></div></div>
+
+            <!--        <h4 class="title">Notice Board</h4> -->
+
+
+            <div id="notice" class="notice" >
+                <ul id="ndata" class="data">
+                    <li style="border:none"></li>
+                    <li style="border:none"></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

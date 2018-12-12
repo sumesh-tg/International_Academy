@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="430.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.notifications.FXMLNotificationController">
+    <stylesheets>
+        <URL value="@fxmlnotification.css" />
+    </stylesheets>
+    <children>
+        <Pane fx:id="offerPane" layoutX="7.0" layoutY="11.0" prefHeight="417.0" prefWidth="415.0" styleClass="gradient1">
+            <children>
+                <Label layoutX="39.0048828125" layoutY="52.5" styleClass="fontlbl" text="Offer Title" />
+<HBox fx:id="offerHbox" layoutX="169.0" layoutY="49.0" prefHeight="25.0" prefWidth="200.0">
+<children>
+                <TextField fx:id="offerTxt" layoutX="169.0" layoutY="49.0" prefHeight="25.0" prefWidth="200.0" />
+</children>
+</HBox>
+                <Label layoutX="39.009765625" layoutY="97.5" styleClass="fontlbl" text="Description" />
+                <TextArea fx:id="descriptionTextArea" layoutX="169.0" layoutY="90.0" prefHeight="78.0" prefWidth="200.0" styleClass="gradient1" />
+                <Label layoutX="39.0" layoutY="190.0" styleClass="fontlbl" text="Branch" />
+                <Label layoutX="39.0048828125" layoutY="226.5" styleClass="fontlbl" text="Role" />
+                <ComboBox fx:id="branchCmb" layoutX="169.0" layoutY="186.0" prefHeight="25.0" prefWidth="200.0" styleClass="gradient1" />
+                <ComboBox fx:id="roleCmb" layoutX="169.0" layoutY="223.0" prefHeight="25.0" prefWidth="200.0" styleClass="gradient1" />
+                <Label layoutX="39.0" layoutY="267.0" styleClass="fontlbl" text="Expire Date" />
+                <DatePicker fx:id="offerExpiryDate" layoutX="169.0" layoutY="263.0" prefHeight="25.0" prefWidth="200.0" styleClass="gradient1" />
+                <Button fx:id="saveBtn" layoutX="317.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="25.0" prefWidth="53.0" styleClass="fontlbl,gradient1" text="Save" /><Button fx:id="deleteBtn" layoutX="247.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleDeleteBtn" prefHeight="26.0" prefWidth="61.0" styleClass="fontlbl,gradient1" text="Delete" /><Button fx:id="cancelBtn" layoutX="173.1875" layoutY="299.0" mnemonicParsing="false" onAction="#handleCancelBtn" styleClass="fontlbl,gradient1" text="Cancel" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

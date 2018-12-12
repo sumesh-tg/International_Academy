@@ -1,0 +1,19 @@
+
+
+CREATE or REPLACE view 
+
+listofenquirieswithminassigneddate_vw
+
+AS 
+
+select min(hs1.assigned_date) MinAssignedDate, hs1.assigned_to, hs1.enquiry_id
+  from history_enquiry_assigning_tbl hs1,
+			 history_enquiry_assigning_tbl hs2,
+       enquiry_details dt	
+ where hs1.enquiry_id = hs2.enquiry_id
+   and hs1.assigned_to = dt.enquiry_assigning
+   and hs1.enquiry_id = dt.enquiry_id
+   and hs2.latest_flag = 'n'
+   and hs1.assigned_date > hs2.assigned_date
+   and hs1.assigned_by <> hs1.assigned_to
+group by hs1.assigned_to, hs1.enquiry_id 

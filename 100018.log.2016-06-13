@@ -1,0 +1,4 @@
+2016-06-13 13:20:27 INFO  [zs.com.ina.db.mysql.pool.DBPool] [branch=Kollam] [user=sheela] Error While Creating Connection :=> com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2016-06-13 18:26:05 ERROR [com.zs.ina.admin.master.retrieve.RetrieveStaticMasterDAO] [branch=Kollam] [user=arun] [Ljava.lang.StackTraceElement;@1aac94ed

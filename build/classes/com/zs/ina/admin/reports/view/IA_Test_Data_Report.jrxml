@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-04-11T19:27:02 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IA_Test_Data_Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8c3fe6f9-a7c2-43c7-ac19-e2a5263bb52d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test1"/>
+	<subDataset name="DatasetStudy" uuid="bfc3dabe-5129-4db3-9d7c-7fa1b3f3159f">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test1"/>
+		<queryString>
+			<![CDATA[SELECT	'total' as study,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_study_tbl es	WHERE	ed.enquiry_assigning = 'a'	AND es.study <> '' AND ed.enquiry_id=es.enquiry_id 
+UNION all
+SELECT	'pending' as study,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_study_tbl es	WHERE	ed.enquiry_assigning = 'a'	AND ed.read_flag=0	AND es.study <> '' AND ed.enquiry_id=es.enquiry_id 
+UNION all
+SELECT	'registered' as study,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_study_tbl es	WHERE	ed.enquiry_assigning = 'a'	AND ed.completion_flag=1	AND es.study <> '' AND ed.enquiry_id=es.enquiry_id 
+UNION all
+SELECT	'Assesed' as study,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_study_tbl es	WHERE	ed.enquiry_assigning = 'a'	AND ed.read_flag=1 AND es.study <> '' AND ed.enquiry_id=es.enquiry_id 
+UNION all
+SELECT 'Fake' as study,	COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_study_tbl ess,enquiry_assesment_status_tbl eas	WHERE	ed.enquiry_assigning = 'a' AND eas.enquiry_status='Fake Call'	AND ess.study <> '' AND ed.enquiry_id=ess.enquiry_id and ess.enquiry_id=eas.enquiry_id]]>
+		</queryString>
+		<field name="study" class="java.lang.String"/>
+		<field name="count" class="java.lang.Long"/>
+	</subDataset>
+	<subDataset name="DatasetWork" uuid="7dbc600e-6642-43ac-b2ac-d7c4bac09c22">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test1"/>
+		<queryString>
+			<![CDATA[SELECT	'total' as work,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_work_tbl ew	WHERE	ed.enquiry_assigning = 'a'	AND ew.work <> '' AND ed.enquiry_id=ew.enquiry_id 
+UNION all
+SELECT	'pending' as work,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_work_tbl ew	WHERE	ed.enquiry_assigning = 'a'	AND ed.read_flag=0	AND ew.work <> '' AND ed.enquiry_id=ew.enquiry_id 
+UNION all
+SELECT	'registered' as work,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_work_tbl ew	WHERE	ed.enquiry_assigning = 'a'	AND ed.completion_flag=1	AND ew.work <> '' AND ed.enquiry_id=ew.enquiry_id 
+UNION all
+SELECT	'Assesed' as work,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_work_tbl ew	WHERE	ed.enquiry_assigning = 'a'	AND ed.read_flag=1 AND ew.work <> '' AND ed.enquiry_id=ew.enquiry_id 
+UNION all
+SELECT 'Fake' as work,	COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_work_tbl ews,enquiry_assesment_status_tbl eas	WHERE	ed.enquiry_assigning = 'a' AND eas.enquiry_status='Fake Call'	AND ews.work <> '' AND ed.enquiry_id=ews.enquiry_id and ews.enquiry_id=eas.enquiry_id]]>
+		</queryString>
+		<field name="work" class="java.lang.String"/>
+		<field name="count" class="java.lang.Long"/>
+		<group name="work">
+			<groupExpression><![CDATA[$F{work}]]></groupExpression>
+		</group>
+		<group name="count">
+			<groupExpression><![CDATA[$F{count}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="DatasetMigrate" uuid="7a763896-40c1-4c57-87e5-2e5bda0bcbd6">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test1"/>
+		<queryString>
+			<![CDATA[SELECT 'total' as migrate ,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_migrate_tbl em	WHERE	ed.enquiry_assigning = 'a' 	AND em.migrate <> '' AND ed.enquiry_id=em.enquiry_id
+UNION all
+SELECT 'pending' as migrate ,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_migrate_tbl em	WHERE	ed.enquiry_assigning = 'a' AND ed.read_flag=0	AND em.migrate <> '' AND ed.enquiry_id=em.enquiry_id
+UNION all
+SELECT 'registered' as migrate ,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_migrate_tbl em	WHERE	ed.enquiry_assigning = 'a' AND ed.completion_flag=1	AND em.migrate <> '' AND ed.enquiry_id=em.enquiry_id
+UNION all
+SELECT 'Assesed' as migrate ,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_migrate_tbl em	WHERE	ed.enquiry_assigning = 'a'	AND ed.read_flag=1 AND em.migrate <> '' AND ed.enquiry_id=em.enquiry_id
+UNION all
+SELECT 'Fake' as migrate,	COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_migrate_tbl ems,enquiry_assesment_status_tbl eas	WHERE	ed.enquiry_assigning = 'a' AND eas.enquiry_status='Fake Call'	AND ems.migrate <> '' AND ed.enquiry_id=ems.enquiry_id and ems.enquiry_id=eas.enquiry_id]]>
+		</queryString>
+		<field name="migrate" class="java.lang.String"/>
+		<field name="COUNT(DISTINCT ed.enquiry_id)" class="java.lang.Long"/>
+		<group name="migrate">
+			<groupExpression><![CDATA[$F{migrate}]]></groupExpression>
+		</group>
+		<group name="COUNT(DISTINCT ed.enquiry_id)">
+			<groupExpression><![CDATA[$F{COUNT(DISTINCT ed.enquiry_id)}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="DatasetTraining" uuid="6bbc8e82-75b1-473d-b0da-8fad062ba379">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test1"/>
+		<queryString>
+			<![CDATA[SELECT 'total' as training ,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_training_tbl et	WHERE	ed.enquiry_assigning = 'a'	AND et.training <> '' AND ed.enquiry_id=et.enquiry_id
+UNION all
+SELECT 'pending' as training ,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_training_tbl et	WHERE	ed.enquiry_assigning = 'a'	AND ed.read_flag=0 AND et.training <> '' AND ed.enquiry_id=et.enquiry_id
+UNION all
+SELECT 'registered' as training ,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_training_tbl et	WHERE	ed.enquiry_assigning = 'a' AND ed.completion_flag=1	AND et.training <> '' AND ed.enquiry_id=et.enquiry_id
+UNION all
+SELECT 'Assesed' as training ,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_training_tbl et	WHERE	ed.enquiry_assigning = 'a' AND ed.read_flag=1	AND et.training <> '' AND ed.enquiry_id=et.enquiry_id
+UNION all
+SELECT 'Fake' as training,COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_training_tbl ets,enquiry_assesment_status_tbl eas	WHERE	ed.enquiry_assigning = 'a' AND eas.enquiry_status='Fake Call'	AND ets.training <> '' AND ed.enquiry_id=ets.enquiry_id and ets.enquiry_id=eas.enquiry_id
+
+]]>
+		</queryString>
+		<field name="training" class="java.lang.String"/>
+		<field name="COUNT(DISTINCT ed.enquiry_id)" class="java.lang.Long"/>
+		<group name="training">
+			<groupExpression><![CDATA[$F{training}]]></groupExpression>
+		</group>
+		<group name="COUNT(DISTINCT ed.enquiry_id)">
+			<groupExpression><![CDATA[$F{COUNT(DISTINCT ed.enquiry_id)}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString>
+		<![CDATA[SELECT	'total' as study,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_study_tbl es	WHERE	ed.enquiry_assigning = 'a'	AND es.study <> '' AND ed.enquiry_id=es.enquiry_id 
+UNION all
+SELECT	'pending' as study,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_study_tbl es	WHERE	ed.enquiry_assigning = 'a'	AND ed.read_flag=0	AND es.study <> '' AND ed.enquiry_id=es.enquiry_id 
+UNION all
+SELECT	'registered' as study,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_study_tbl es	WHERE	ed.enquiry_assigning = 'a'	AND ed.completion_flag=1	AND es.study <> '' AND ed.enquiry_id=es.enquiry_id 
+UNION all
+SELECT	'Assesed' as study,COUNT(DISTINCT ed.enquiry_id) as count FROM enquiry_details ed,enquiry_assessment_study_tbl es	WHERE	ed.enquiry_assigning = 'a'	AND ed.read_flag=1 AND es.study <> '' AND ed.enquiry_id=es.enquiry_id 
+UNION all
+SELECT 'Fake' as study,	COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed,enquiry_assessment_study_tbl ess,enquiry_assesment_status_tbl eas	WHERE	ed.enquiry_assigning = 'a' AND eas.enquiry_status='Fake Call'	AND ess.study <> '' AND ed.enquiry_id=ess.enquiry_id and ess.enquiry_id=eas.enquiry_id]]>
+	</queryString>
+	<field name="study" class="java.lang.String"/>
+	<field name="count" class="java.lang.Long"/>
+	<group name="study">
+		<groupExpression><![CDATA[$F{study}]]></groupExpression>
+	</group>
+	<group name="count">
+		<groupExpression><![CDATA[$F{count}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="4" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="10" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="8" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="2" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="2" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="18" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="661" splitType="Stretch">
+			<bar3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="30" y="0" width="481" height="150" uuid="62b88d36-33e2-43fd-944a-3383496ae275"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="DatasetStudy" uuid="bc555634-5443-487e-a513-03a019569c2f"/>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{study}]]></seriesExpression>
+						<categoryExpression><![CDATA[0]]></categoryExpression>
+						<valueExpression><![CDATA[$F{count}]]></valueExpression>
+						<labelExpression><![CDATA[$F{study}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+			<bar3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="30" y="160" width="481" height="150" uuid="d1be0317-bcc2-40c4-a622-df0811d19ae0"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="DatasetWork" uuid="c3391034-81a1-4f8d-84c0-3e63636d5042"/>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{work}]]></seriesExpression>
+						<categoryExpression><![CDATA[0]]></categoryExpression>
+						<valueExpression><![CDATA[$F{count}]]></valueExpression>
+						<labelExpression><![CDATA[$F{work}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+			<bar3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="30" y="330" width="481" height="160" uuid="636d15ad-3933-42f2-a86c-b3604dad973c"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="DatasetMigrate" uuid="2f180a32-fd07-4d1e-a3db-313488443827"/>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{migrate}]]></seriesExpression>
+						<categoryExpression><![CDATA[0]]></categoryExpression>
+						<valueExpression><![CDATA[$F{COUNT(DISTINCT ed.enquiry_id)}]]></valueExpression>
+						<labelExpression><![CDATA[$F{migrate}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+			<bar3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="30" y="510" width="481" height="151" uuid="7124af9e-9d2b-43f2-bd93-b0b35281a1bf"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="DatasetTraining" uuid="6965cf2e-6657-4d3d-9f1e-cd506e34d9cf"/>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{training}]]></seriesExpression>
+						<categoryExpression><![CDATA[0]]></categoryExpression>
+						<valueExpression><![CDATA[$F{COUNT(DISTINCT ed.enquiry_id)}]]></valueExpression>
+						<labelExpression><![CDATA[$F{training}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="350" width="99" height="31" forecolor="#FF0400" uuid="4a61fef0-2407-4189-80b6-e4587b86d5a7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MIGRATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="12" width="99" height="31" forecolor="#FF0400" uuid="8b05e769-3c0b-48b4-abea-5723b5dfca14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STUDY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="520" width="99" height="31" forecolor="#FF0400" uuid="0699b5d7-abc5-49db-8ff1-81ed8d710389"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRAINING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="170" width="99" height="31" forecolor="#FF0400" uuid="d8aab9ef-0d55-4e98-9aef-cf21a6e8c3f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WORK]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

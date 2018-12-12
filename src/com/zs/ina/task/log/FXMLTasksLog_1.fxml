@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefWidth="429.0" style="-fx-padding: 3;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.task.log.FXMLTasksLogController">
+    <stylesheets>
+        <URL value="@fxmltaskslog.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lblTaskName" layoutX="12.0" layoutY="29.0" maxHeight="1.7976931348623157E308" prefWidth="247.0" text="Task Name     :" />
+      <Label fx:id="lblTaskNo" layoutX="12.0" layoutY="49.0" text="Ticket No       :" />
+      <HBox alignment="CENTER" layoutY="3.0" prefHeight="23.0" prefWidth="689.0" style="-fx-background-color: #104fa2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Log " textFill="#fcfcfc" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ListView fx:id="listViewLog" layoutX="10.0" layoutY="171.0" prefHeight="336.0" prefWidth="408.0" />
+      <Label fx:id="lblTaskCreatedDate" layoutX="11.0" layoutY="68.0" text="Created Date :" />
+      <TextField fx:id="txtSearch" layoutX="10.0" layoutY="143.0" prefHeight="25.0" prefWidth="408.0" promptText="Search here..." styleClass="searchIcon" />
+      <ComboBox fx:id="cmbTaskStatus" layoutX="270.0" layoutY="30.0" prefWidth="150.0" promptText="Change Task Status" />
+      <Label fx:id="lblTaskDescription" layoutX="11.0" layoutY="106.0" maxHeight="1.7976931348623157E308" prefWidth="408.0" text="Description    :" />
+      <TextField fx:id="txtRemarks" layoutX="10.0" layoutY="538.0" prefHeight="25.0" prefWidth="408.0" promptText="Add your remark here..." />
+      <Button fx:id="btnAddRemark" layoutX="322.0" layoutY="566.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" styleClass="btnsubmit" text="Add Remark" />
+      <ComboBox fx:id="cmbAssesmentSubStatus" layoutX="10.0" layoutY="510.0" prefHeight="25.0" prefWidth="408.0" promptText="Change Assessment Status  Here..." />
+      <Label fx:id="lblTaskCreatedBy" layoutX="11.0" layoutY="86.0" text="Created By     :" />
+   </children>
+</AnchorPane>

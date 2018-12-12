@@ -1,0 +1,2 @@
+2016-06-15 16:59:31 INFO  [zs.com.ina.db.mysql.pool.DBPool] [branch=] [user=] Error While Creating Connection :=> java.sql.SQLException: null,  message from server: "Host 'User04-PC' is not allowed to connect to this MySQL server"
+2016-06-15 16:59:32 INFO  [zs.com.ina.db.mysql.pool.DBPool] [branch=] [user=] Error While Creating Connection :=> java.sql.SQLException: null,  message from server: "Host 'User04-PC' is not allowed to connect to this MySQL server"

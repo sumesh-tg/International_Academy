@@ -1,0 +1,20 @@
+2016-06-16 14:09:35 ERROR [com.zs.ina.admin.master.threaddelay.dao.ThreadDelayIMPL] [branch=Kollam] [user=Administrator] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia.mastertbl_thread_delay' doesn't exist
+2016-06-16 14:09:36 ERROR [com.zs.ina.admin.mainView.MasterTableFXMLController$7] [branch=Kollam] [user=Administrator] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/International_Academy/dist/run514042732/International_Academy.jar!/com/zs/ina/admin/master/threaddelay/FXMLThreadDelay.fxml
+
+2016-06-16 14:09:38 ERROR [com.zs.ina.admin.master.threaddelay.dao.ThreadDelayIMPL] [branch=Kollam] [user=Administrator] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia.mastertbl_thread_delay' doesn't exist
+2016-06-16 14:09:38 ERROR [com.zs.ina.admin.mainView.MasterTableFXMLController$7] [branch=Kollam] [user=Administrator] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/International_Academy/dist/run514042732/International_Academy.jar!/com/zs/ina/admin/master/threaddelay/FXMLThreadDelay.fxml
+
+2016-06-16 14:09:39 ERROR [com.zs.ina.admin.master.threaddelay.dao.ThreadDelayIMPL] [branch=Kollam] [user=Administrator] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia.mastertbl_thread_delay' doesn't exist
+2016-06-16 14:09:39 ERROR [com.zs.ina.admin.mainView.MasterTableFXMLController$7] [branch=Kollam] [user=Administrator] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/International_Academy/dist/run514042732/International_Academy.jar!/com/zs/ina/admin/master/threaddelay/FXMLThreadDelay.fxml
+
+2016-06-16 14:09:41 ERROR [com.zs.ina.admin.master.threaddelay.dao.ThreadDelayIMPL] [branch=Kollam] [user=Administrator] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia.mastertbl_thread_delay' doesn't exist
+2016-06-16 14:09:41 ERROR [com.zs.ina.admin.mainView.MasterTableFXMLController$7] [branch=Kollam] [user=Administrator] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/International_Academy/dist/run514042732/International_Academy.jar!/com/zs/ina/admin/master/threaddelay/FXMLThreadDelay.fxml
+
+2016-06-16 17:31:27 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-16 17:31:27 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-16 17:56:23 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-16 17:56:23 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 

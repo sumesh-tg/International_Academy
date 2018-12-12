@@ -1,0 +1,9 @@
+.gradient1{
+    -fx-background-color: 
+        linear-gradient(to bottom, #f9f9f9 0%,#e9eaed 21%,#d3d4db 49%,#eaebee 80%,#f9f9f9 100%);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );  
+}
+.fontlbl{
+    -fx-font-family: 'Arial';
+    -fx-font-size:14;
+}

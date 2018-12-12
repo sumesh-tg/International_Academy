@@ -1,0 +1,18 @@
+.round-red {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+.countbutton  {
+  -fx-background-color: blue;
+  -fx-text-fill: white;
+  -fx-background-radius: 16.4, 15;
+  -fx-background-insets: -1.4, 0;
+  -fx-border-radius: 15;
+  -fx-border-width: 2;
+  -fx-border-color: white;
+  -fx-background-insets:1;
+  -fx-padding: 0;
+  -fx-font-size: 12;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorMain" minHeight="57.0" minWidth="293.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.common.error.FXMLSuccessViewerController">
+       <stylesheets>
+        <URL value="@fxmlsuccessviewer.css" />
+    </stylesheets>
+<children>
+<ImageView fx:id="imgSuccess" fitHeight="36.0" fitWidth="30.0" layoutX="16.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+<effect>
+<Reflection bottomOpacity="0.52" fraction="0.42" topOpacity="0.38" />
+</effect>
+<image>
+<Image url="@tick.png" />
+</image>
+</ImageView>
+<VBox fx:id="vboxMessages" alignment="CENTER" layoutX="76.0" layoutY="4.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-padding: 3;">
+<children>
+<Label fx:id="lblTitleMessage" text="Error Notification" textFill="#3f8a0a">
+<font>
+<Font name="Arial Bold" size="18.0" />
+</font>
+</Label>
+<Label fx:id="lblTipz" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Error messages are shown here." />
+</children>
+</VBox>
+</children>
+
+</AnchorPane>

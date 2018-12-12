@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="478.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.zs.ina.admin.master.documents.FXMLAssignDocumentsController">
+    <stylesheets>
+        <URL value="@fxmlassigndocuments.css" />
+    </stylesheets>
+<children><AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="484.0" styleClass="mainFxmlClass">
+<children>
+<VBox layoutX="5.0" layoutY="5.0" prefHeight="433.0" prefWidth="425.0" spacing="5.0" style="-fx-border-color: #08468F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children>
+<HBox alignment="CENTER" layoutX="144.0048828125" layoutY="31.5" prefHeight="33.0" style="-fx-background-color: #08468F;">
+<children>
+<Label layoutX="144.0048828125" layoutY="31.5" styleClass="fonttitlelbl" text="AssignDocument Heads With Program" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font>
+</Label>
+</children>
+</HBox>
+<AnchorPane VBox.vgrow="ALWAYS">
+<children>
+<Label layoutX="89.0" layoutY="18.0" prefHeight="16.0" prefWidth="103.0" styleClass="fontlbl" text="Select Program">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label>
+<Label layoutX="179.0" layoutY="68.0" prefHeight="16.0" prefWidth="147.0" styleClass="fontlbl" text="Assign Document Heads">
+<font>
+<Font name="Times New Roman Bold" size="14.0" />
+</font>
+</Label>
+<ComboBox fx:id="cmbProgramReqd" layoutX="230.0" layoutY="14.0" prefHeight="25.0" prefWidth="165.0" />
+<ListView fx:id="listViewDocuments" layoutX="38.0" layoutY="105.0" prefHeight="310.0" prefWidth="397.0" />
+<Button fx:id="btnSave" layoutX="320.0" layoutY="451.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" styleClass="button-submit" text="Save" />
+<Button fx:id="btnClearAll" layoutX="179.0" layoutY="451.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" styleClass="button-submit" text="Clear All" />
+</children>
+</AnchorPane>
+</children>
+</VBox>
+</children>
+<stylesheets>
+<URL value="@../payment/fxmlpaymentheads.css" />
+</stylesheets>
+</AnchorPane>
+</children>
+</AnchorPane>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="741.0" prefWidth="941.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.admin.mainView.MasterTableFXMLController">
+    <stylesheets>
+        <URL value="@mastertablefxml.css" />
+    </stylesheets>
+<children><BorderPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+<top><BorderPane prefHeight="106.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+<left><VBox minWidth="178.0" prefHeight="106.0" BorderPane.alignment="TOP_CENTER">
+<children>
+<HBox alignment="TOP_CENTER">
+<children><ImageView fitHeight="60.0" fitWidth="60.0" layoutX="92.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../../enquiry/images/ia_logo.png" />
+</image>
+</ImageView>
+</children>
+</HBox>
+<HBox alignment="CENTER">
+<children><Label id="enquirylbltitle2" layoutY="59.0" styleClass="enquirylbltitle" text="International Academy" />
+</children>
+</HBox><FlowPane alignment="CENTER" hgap="10.0" maxWidth="1.7976931348623157E308" prefHeight="200.0">
+<children>
+<Label fx:id="lblLogout" text="(Logout)" textFill="#9a0909">
+<cursor>
+<Cursor fx:constant="HAND" />
+</cursor>
+<graphic>
+<ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../../counselor/images/logout.png" />
+</image>
+</ImageView>
+</graphic>
+</Label>
+<Label fx:id="hyperBranch" text="Admin" textFill="#1029e4" />
+</children>
+</FlowPane>
+</children></VBox>
+</left>
+<right><HBox alignment="CENTER_LEFT" layoutX="63.0" layoutY="227.0" style="-fx-spacing: 10;" BorderPane.alignment="CENTER">
+<children>
+<ComboBox fx:id="cmbSwitchUser" layoutX="63.0" layoutY="227.0" prefHeight="25.0" prefWidth="140.0" styleClass="combo-box-base" />
+<Button fx:id="btnSwitchUserGo" mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" styleClass="round-red" text="Go" />
+</children>
+</HBox>
+</right></BorderPane>
+</top>
+<center>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="931.0" style="-fx-background-color: #08468F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="Master Table Settings" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <GridPane hgap="5.0" layoutY="23.0" style="-fx-padding: 5;" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+  <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints vgrow="ALWAYS" />
+    <RowConstraints vgrow="ALWAYS" />
+  </rowConstraints>
+<children>
+                        <VBox spacing="10.0" styleClass="vboxMaster" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+<children>
+                              <HBox alignment="BOTTOM_LEFT" prefHeight="7.0" prefWidth="226.0" style="-fx-background-color: #08468F;">
+<children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="13.0">
+<children>
+                                          <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@image/dummy.png" />
+</image>
+<HBox.margin>
+<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+</HBox.margin>
+                                          </ImageView>
+</children>
+                                    </HBox>
+<HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+<children>
+                                          <Label text="Qualifications" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font>
+                                          </Label>
+</children>
+</HBox>
+</children>
+                              </HBox>
+                              <Hyperlink fx:id="course" onAction="#handleCourse" text="Training Course" />
+                              <Hyperlink fx:id="qualificationDuration" onAction="#handleQualificationDuration" text="Qualification Duraion" />
+                              <Hyperlink fx:id="qualificationField" onAction="#qualifiationFieldhandle" text="Qualification Field" />
+                              <Hyperlink fx:id="hyperQualificnLevel" text="Qualification Level" />
+                              <Hyperlink fx:id="hyperRelationship" text="Family Relationships" />
+</children>
+                        </VBox>
+                        <VBox spacing="5.0" styleClass="vboxMaster" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+<children>
+                              <HBox alignment="CENTER" prefHeight="14.0" prefWidth="226.0" style="-fx-background-color: #08468F;">
+<children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="0.0">
+<children>
+                                          <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@image/dummy.png" />
+</image>
+<HBox.margin>
+<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+</HBox.margin>
+</ImageView>
+</children>
+                                    </HBox>
+<HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+<children>
+                                          <Label text="Locations" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font>
+                                          </Label>
+</children>
+</HBox>
+</children>
+                              </HBox>
+                              <Hyperlink fx:id="hyperLocations" text="Addresss : Country - State - District " wrapText="true" />
+<Hyperlink fx:id="hyperCountryLocations" layoutX="11.0" layoutY="41.0" onAction="#handleCountry" text="Program Rrequired : Country &amp; Locations" wrapText="true" /><Hyperlink fx:id="hyperAddCountry" layoutX="11.0" layoutY="94.0" text="Add Country" />
+</children>
+                        </VBox>
+                        <VBox spacing="5.0" styleClass="vboxMaster" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+<children>
+                              <HBox alignment="CENTER" prefHeight="7.0" prefWidth="226.0" style="-fx-background-color: #08468F;">
+<children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="0.0">
+<children>
+<ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@image/dummy.png" />
+</image>
+<HBox.margin>
+<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+</HBox.margin>
+</ImageView>
+</children>
+</HBox>
+<HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+<children>
+                                          <Label text="Experience" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font>
+                                          </Label>
+</children>
+</HBox>
+</children>
+                              </HBox>
+                              <Hyperlink fx:id="experiance" onAction="#handleExperiance" text="Experience" />
+                              <Hyperlink fx:id="institute" onAction="#handleinstitute" text="Institute" />
+                              <Hyperlink fx:id="jobType" onAction="#handleJobType" text="Job Type" />
+                              <Hyperlink fx:id="profession" onAction="#professionHandle" text="Profession" />
+                              <Hyperlink fx:id="salary" onAction="#salaryhandle" text="Salary" />
+                              <Hyperlink fx:id="hprTechnicalSkills" onAction="#handleTechnicalSkills" text="Technical Skills" />
+                              <Hyperlink fx:id="hprOtherSkills" onAction="#handleOtherSkills" text="Other Skills" />
+</children>
+                        </VBox>
+                        <VBox spacing="10.0" styleClass="vboxMaster" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+<children>
+                              <HBox alignment="CENTER" prefHeight="15.0" prefWidth="226.0" style="-fx-background-color: #08468F;">
+<children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="0.0">
+<children>
+<ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@image/dummy.png" />
+</image>
+<HBox.margin>
+<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+</HBox.margin>
+</ImageView>
+</children>
+</HBox>
+<HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+<children>
+                                          <Label text="Skills/Language" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font>
+                                          </Label>
+</children>
+</HBox>
+</children>
+                              </HBox>
+                              <Hyperlink fx:id="language" onAction="#languageHandle" text="Medium of Instructions" />
+                              <Hyperlink fx:id="otherTest" onAction="#otherTestHandle" text="Other Test" />
+                              <Hyperlink fx:id="score" onAction="#scoreHandle" text="Score" />
+                              <Hyperlink fx:id="timing" onAction="#timinghandle" text="Timing" />
+                              <Hyperlink fx:id="hptAdmissionTest" onAction="#admissionTesthandle" text="Admission Test" />
+</children>
+                        </VBox>
+                        <VBox spacing="4.0" styleClass="vboxMaster">
+      <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="15.0" prefWidth="229.0" style="-fx-background-color: #08468F;">
+      <children>
+                                    <HBox prefHeight="24.0" prefWidth="13.0">
+      <children>
+                                          <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+      <Image url="@image/dummy.png" />
+      </image>
+      <HBox.margin>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </HBox.margin>
+                                          </ImageView>
+      </children>
+                                    </HBox>
+      <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+      <children>
+                                          <Label text="Administration" textFill="WHITE" HBox.hgrow="ALWAYS">
+      <font>
+      <Font name="System Bold" size="14.0" />
+      </font>
+                                          </Label>
+      </children>
+      </HBox>
+      </children>
+                              </HBox>
+                              <Hyperlink fx:id="inbox" onAction="#handleInbox" text="Inbox" />
+                              <Hyperlink fx:id="branch" onAction="#handleBranch" text="Branch" />
+                              <Hyperlink fx:id="hyperPrivilages" disable="true" onAction="#handlePrivilage" text="Privileges" />
+                              <Hyperlink fx:id="hyperRole" disable="true" onAction="#handleRole" text="Role" />
+                              <Hyperlink fx:id="loginDetails" onAction="#handleLoginDetails" text="User Creation" />
+      <Hyperlink fx:id="hyperViewReports" layoutX="11.0" layoutY="41.0" text="View Reports" />
+                              <Hyperlink fx:id="hyperViewTasks" layoutX="11.0" layoutY="272.0" text="View Tasks" />
+      <Hyperlink fx:id="hyperEnquiryStatus" layoutX="11.0" layoutY="305.0" text="Add Enquiry Status" />
+                              <Hyperlink fx:id="hyperAddSource" text="Add Enquiry Source" />
+                              <Hyperlink fx:id="hyperAddMethod" text="Add Method" />
+      </children>
+                        </VBox>
+                        <VBox spacing="4.0" styleClass="vboxMaster" GridPane.columnIndex="4">
+      <children>
+                              <HBox alignment="CENTER" prefHeight="15.0" prefWidth="222.0" style="-fx-background-color: #08468F;">
+      <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="0.0">
+      <children>
+      <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+      <Image url="@image/dummy.png" />
+      </image>
+      <HBox.margin>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </HBox.margin>
+      </ImageView>
+      </children>
+      </HBox>
+      <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+      <children>
+                                          <Label text="Others" textFill="WHITE">
+      <font>
+      <Font name="System Bold" size="14.0" />
+      </font>
+                                          </Label>
+      </children>
+      </HBox>
+      </children>
+                              </HBox>
+                              <Hyperlink fx:id="examBoard" onAction="#handleExamBoard" text="Exam Board" />
+                              <Hyperlink fx:id="migrationCategory" onAction="#handlemigrationCategory" text="Migration Category" />
+                              <Hyperlink fx:id="batchTiming" onAction="#handleBatchTiming" text="Batch Timing" />
+                              <Hyperlink fx:id="courseType" onAction="#handleCourseType" text="Course Type" />
+                              <Hyperlink fx:id="universityLink" onAction="#handleUniversityLink" text="University" />
+                              <Hyperlink fx:id="suggestedCourseLink" onAction="#handleSuggestedCourseLink" text="Suggested Course" />
+                              <Hyperlink fx:id="hyperEnqForwardPurpose" text="Enquiry Forward Purposes" />
+                              <Hyperlink fx:id="hyperStdCodes" layoutX="11.0" layoutY="206.0" text="STD Codes" />
+                              <Hyperlink fx:id="hyperIsdCodes" layoutX="11.0" layoutY="401.0" text="ISD Codes" />
+                              <Hyperlink fx:id="hyperAge" layoutX="11.0" layoutY="434.0" text="Add Age" />
+                              <Hyperlink fx:id="agency" onAction="#agencyhandle" text="Agency" />
+      </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vboxMaster" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <children>
+      <HBox alignment="CENTER" style="-fx-background-color: #08468F;">
+      <children>
+      <Label text="Settings" textFill="WHITE">
+      <font>
+      <Font name="System Bold" size="14.0" />
+      </font>
+      </Label>
+      </children>
+      </HBox>
+                              <Hyperlink fx:id="hyperConfigEmail" text="Configure Email" />
+                              <Hyperlink fx:id="hyperSetEnquiryLimit" text="Set Enquiry Limit" />
+                              <Hyperlink fx:id="hyperSetRefreshSeconds" text="Set Refresh Seconds" />
+                              <Hyperlink fx:id="noticeBoard" onAction="#noticeBoardHandle" text="Notice Board" />
+                           </children>
+                        </VBox>
+                        <VBox spacing="5.0" styleClass="vboxMaster" GridPane.rowIndex="1">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="15.0" prefWidth="229.0" style="-fx-background-color: #08468F;">
+      <children>
+      <HBox prefHeight="24.0" prefWidth="13.0">
+      <children>
+      <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+      <Image url="@image/dummy.png" />
+      </image>
+      <HBox.margin>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </HBox.margin>
+      </ImageView>
+      </children>
+      </HBox>
+      <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+      <children>
+      <Label text="Registration" textFill="WHITE" HBox.hgrow="ALWAYS">
+      <font>
+      <Font name="System Bold" size="14.0" />
+      </font>
+      </Label>
+      </children>
+      </HBox>
+      </children>
+      </HBox>
+                              <Hyperlink fx:id="hyperPaymentHead" text="Add Payment Head" />
+                              <Hyperlink fx:id="hyperPaymentAmount" text="Add Payment Amount" />
+                              <Hyperlink fx:id="hyperMakeMandatory" text="Make Mandatory Payment Heads" />
+                              <Hyperlink fx:id="hyperAddDocument" onAction="#handleCountry" text="Add Document Heads" />
+                              <Hyperlink fx:id="hyperAssignDocuments" onAction="#handleCountry" text="Assign Document Heads to Program" /><Hyperlink fx:id="hyperEmailSignature" text="Create Email Signature" /><Hyperlink fx:id="hyperEmailTemplate" text="Create Email Template" />
+                           </children>
+                        </VBox>
+                        <VBox styleClass="vboxMaster" GridPane.columnIndex="2">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="14.0" prefWidth="226.0" style="-fx-background-color: #08468F;">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="0.0">
+                                       <children>
+                                          <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image/dummy.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Program Search" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <Hyperlink fx:id="hyperSearchHome" layoutX="11.0" layoutY="94.0" text="Search Home" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vboxMaster" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="14.0" prefWidth="226.0" style="-fx-background-color: #08468F;">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="0.0">
+                                       <children>
+                                          <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image/dummy.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Search Master Forms" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox><Hyperlink fx:id="hyperAccomodation" text="Add Accomodation" /><Hyperlink fx:id="hyperAddIntake" text="Add Intake" /><Hyperlink fx:id="hyperTrainingDuration" text="Add Training Course Duration" wrapText="true" />
+                              <Hyperlink fx:id="hyperJobTitle" layoutX="11.0" layoutY="31.0" text="Add Job Title (Employer Search)" wrapText="true" />
+                              <Hyperlink fx:id="hyperCurrency" layoutX="11.0" layoutY="54.0" text="Add Currency" wrapText="true" />
+                              <Hyperlink fx:id="hyperFeeType" layoutX="11.0" layoutY="94.0" text="Add Fee Type" wrapText="true" />
+                              <Hyperlink fx:id="hyperSubClass" layoutX="11.0" layoutY="117.0" text="Add Sub Class" wrapText="true" />
+                              <Hyperlink fx:id="hyperOccCategory" layoutX="11.0" layoutY="140.0" text="Add Occupation Category" wrapText="true" />
+                           </children>
+                        </VBox>
+</children>
+</GridPane>
+               </children>
+            </AnchorPane>
+</center></BorderPane>
+</children>
+</AnchorPane>

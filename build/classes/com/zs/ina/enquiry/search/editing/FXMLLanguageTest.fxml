@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" style="-fx-padding: 3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.enquiry.search.editing.FXMLLanguageTestController">
+<children>
+<Label alignment="CENTER" contentDisplay="CENTER" layoutY="61.0" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="356.0" styleClass="lblStudyTitle" textFill="#f5f0f0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+<graphic>
+<Text fill="#eee9e9" layoutX="120.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Language Test" wrappingWidth="170.13671875">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+</Text>
+</graphic>
+</Label>
+<GridPane fx:id="gridLangTest" layoutX="14.0" layoutY="27.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+<columnConstraints>
+<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+</columnConstraints>
+<rowConstraints>
+<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+</rowConstraints>
+<children>
+<ComboBox fx:id="cmbScore" layoutX="178.0" layoutY="27.0" prefHeight="25.0" prefWidth="158.0" promptText="Select Score" GridPane.columnIndex="1" />
+<ComboBox fx:id="cmbTest" layoutX="14.0" layoutY="28.0" prefHeight="25.0" prefWidth="158.0" promptText="Select Test" />
+</children>
+</GridPane>
+<HBox alignment="CENTER_RIGHT" layoutX="294.0" layoutY="58.0" minWidth="20.0" prefHeight="20.0" style="-fx-padding: 3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+<children>
+<Button fx:id="btnSave" layoutX="294.0" layoutY="58.0" mnemonicParsing="false" text="Save" />
+</children>
+</HBox>
+</children>
+<stylesheets>
+<URL value="@fxmlstudyrequired.css" />
+</stylesheets>
+</AnchorPane>

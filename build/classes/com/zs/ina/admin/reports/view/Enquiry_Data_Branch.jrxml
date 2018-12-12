@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Enquiry_Data_Branch" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8a465670-cc4a-4270-965f-8efb86e33b71">
+	<property name="template.engine" value="tabular_template"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="96"/>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="tableDataset" uuid="44c46ca3-7dec-4222-a17f-67199b348a1c">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString>
+			<![CDATA[SELECT
+ed.enquiry_assigning,ed.branch,
+count(ed1.read_flag) AS Completed,
+count(ed2.read_flag) AS Pending
+FROM
+enquiry_details ed
+LEFT JOIN enquiry_details ed1 ON  (
+ed.enquiry_id = ed1.enquiry_id
+AND ed1.read_flag = 1
+)
+               
+LEFT JOIN enquiry_details ed2 ON 
+                (
+ed.enquiry_id = ed2.enquiry_id
+AND ed2.read_flag = 0
+) 
+WHERE
+ ed.enquiry_assigning <> ''
+GROUP BY
+ed.enquiry_assigning ORDER BY ed.branch]]>
+		</queryString>
+		<field name="enquiry_assigning" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="branch" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="Completed" class="java.lang.Long"/>
+		<field name="Pending" class="java.lang.Long"/>
+		<group name="enquiry_assigning">
+			<groupExpression><![CDATA[$F{enquiry_assigning}]]></groupExpression>
+		</group>
+		<group name="branch">
+			<groupExpression><![CDATA[$F{branch}]]></groupExpression>
+		</group>
+		<group name="Completed">
+			<groupExpression><![CDATA[$F{Completed}]]></groupExpression>
+		</group>
+		<group name="Pending">
+			<groupExpression><![CDATA[$F{Pending}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="NewData" uuid="efbb3b36-78a2-4e65-9661-f937e2ed51a8">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString>
+			<![CDATA[SELECT
+ed.enquiry_assigning,ed.branch,
+count(ed1.read_flag) AS Completed,
+count(ed2.read_flag) AS Pending
+FROM
+enquiry_details ed
+LEFT JOIN enquiry_details ed1 ON  (
+ed.enquiry_id = ed1.enquiry_id
+AND ed1.read_flag = 1
+)
+               
+LEFT JOIN enquiry_details ed2 ON 
+                (
+ed.enquiry_id = ed2.enquiry_id
+AND ed2.read_flag = 0
+) 
+WHERE
+ ed.enquiry_assigning <> ''
+GROUP BY
+ed.enquiry_assigning ORDER BY ed.branch]]>
+		</queryString>
+		<field name="enquiry_assigning" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="branch" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="Completed" class="java.lang.Long"/>
+		<field name="Pending" class="java.lang.Long"/>
+		<group name="enquiry_assigning">
+			<groupExpression><![CDATA[$F{enquiry_assigning}]]></groupExpression>
+		</group>
+		<group name="branch">
+			<groupExpression><![CDATA[$F{branch}]]></groupExpression>
+		</group>
+		<group name="Completed">
+			<groupExpression><![CDATA[$F{Completed}]]></groupExpression>
+		</group>
+		<group name="Pending">
+			<groupExpression><![CDATA[$F{Pending}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="NewBranchData" uuid="c5744804-4f7a-41d8-b558-f1cba1c24233">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+		<queryString>
+			<![CDATA[SELECT
+ed.enquiry_assigning,
+count(ed1.read_flag) AS Completed,
+count(ed2.read_flag) AS Pending
+FROM
+enquiry_details ed
+LEFT JOIN enquiry_details ed1 ON  (
+ed.enquiry_id = ed1.enquiry_id
+AND ed1.read_flag = 1
+) 
+LEFT JOIN enquiry_details ed2 ON (
+ed.enquiry_id = ed2.enquiry_id
+AND ed2.read_flag = 0
+) 
+WHERE
+ed.branch = 'kollam' and ed.enquiry_assigning<>''
+GROUP BY
+ed.enquiry_assigning]]>
+		</queryString>
+		<field name="enquiry_assigning" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="Completed" class="java.lang.Long"/>
+		<field name="Pending" class="java.lang.Long"/>
+		<group name="enquiry_assigning">
+			<groupExpression><![CDATA[$F{enquiry_assigning}]]></groupExpression>
+		</group>
+		<group name="Completed">
+			<groupExpression><![CDATA[$F{Completed}]]></groupExpression>
+		</group>
+		<group name="Pending">
+			<groupExpression><![CDATA[$F{Pending}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="19" splitType="Stretch"/>
+	</title>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="460" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="110" y="40" width="600" height="160" uuid="1c8d0f87-6ee0-4fce-8fed-a2ba55939eb8"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="NewBranchData" uuid="6d32f074-3d1c-48aa-a0bd-17ebbbb61f8b"/>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{enquiry_assigning}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{Completed}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{Completed}]]></valueExpression>
+						<labelExpression><![CDATA[$F{enquiry_assigning}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+			<staticText>
+				<reportElement x="210" y="4" width="350" height="36" forecolor="#C72724" uuid="d95e16b1-9100-4b52-9073-baedbba3f45d"/>
+				<box padding="1" leftPadding="1">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registered enquiries]]></text>
+			</staticText>
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="120" y="260" width="620" height="200" uuid="ef62b6a0-41dd-412a-98bd-35d38fd3a2dd"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="NewData" uuid="9b44a274-7567-45c5-b0fd-b472d580582f"/>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{enquiry_assigning}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{Pending}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{Pending}]]></valueExpression>
+						<labelExpression><![CDATA[$F{enquiry_assigning}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="210" width="441" height="35" forecolor="#D42926" uuid="b249ab1e-2d05-473f-94d2-b61672f85ecd"/>
+				<box padding="1" leftPadding="1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pending Enquiries]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

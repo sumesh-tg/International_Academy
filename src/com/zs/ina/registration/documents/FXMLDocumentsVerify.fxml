@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.registration.documents.FXMLDocumentsVerifyController">
+        <stylesheets>
+        <URL value="@fxmldocumentsverify.css" />
+    </stylesheets>
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="22.0" style="-fx-background-color: #08468F;">
+         <children>
+            <Label layoutX="273.0" layoutY="14.0" text="Documents Required For Registration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../enquiry/images/enquiry_icons.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label><ComboBox fx:id="cmbProgramReqd" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="30.0" style="-fx-padding: 5;">
+         <children>
+            <GridPane fx:id="gridDocumentsForRegn" hgap="10.0" maxWidth="1.7976931348623157E308" vgap="5.0" HBox.hgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="76.0" prefWidth="184.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="0.0" prefWidth="163.0" />
+<ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="163.0" />
+<ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="163.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <Label layoutX="26.0" layoutY="131.0" prefWidth="146.0" styleClass="small_title" text="Passport Size Photogaph">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Status" styleClass="button-service" GridPane.columnIndex="1" />
+                  <Label maxWidth="327.0" minWidth="327.0" prefHeight="19.0" prefWidth="327.0" styleClass="small_title" text="Passport Copy" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label maxWidth="327.0" minWidth="327.0" prefHeight="19.0" prefWidth="327.0" styleClass="small_title" text="Birth Certificate" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="327.0" styleClass="small_title" text="Change of Name Applicable" GridPane.rowIndex="4" />
+                  <Label prefHeight="20.0" prefWidth="327.0" styleClass="small_title" text="Marriege Certificate" GridPane.rowIndex="5" />
+                  <Label prefHeight="20.0" prefWidth="327.0" styleClass="small_title" text="10 th Certificate Copy" GridPane.rowIndex="6" />
+                  <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Status" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Status" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Status" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Status" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Status" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Upload" GridPane.columnIndex="2" />
+                  <TextField promptText="Comments" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField promptText="Comments" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField promptText="Comments" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextField promptText="Comments" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <TextField promptText="Comments" GridPane.columnIndex="2" GridPane.rowIndex="6" /><Label prefHeight="17.0" prefWidth="167.0" text="Total Number of Notifications" GridPane.columnIndex="4" /><Label fx:id="lblNotificationsCount" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="171.0" text="50" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+               </children>
+               <styleClass>
+                  <String fx:value="gridStyle" />
+                  <String fx:value="gridAssessment" />
+               </styleClass>
+            </GridPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="1003.0" style="-fx-spacing: 10;">
+         <VBox.margin>
+            <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+         </VBox.margin>
+         <children><Button fx:id="btnNofifyUser" mnemonicParsing="false" prefHeight="43.0" prefWidth="129.0" styleClass="round-red" text="Notify User">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+<StackPane alignment="TOP_RIGHT" prefHeight="24.0" prefWidth="170.0">
+<children><Button fx:id="btnNotificationLog" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="round-red" text="Notification Log">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+<StackPane.margin>
+<Insets />
+</StackPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button><Button fx:id="btnCountNotifications" alignment="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" styleClass="countbutton" text="0" wrapText="true">
+<StackPane.margin>
+<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+</StackPane.margin></Button>
+</children>
+<HBox.margin>
+<Insets />
+</HBox.margin>
+</StackPane><Button fx:id="btnProceed" mnemonicParsing="false" prefHeight="52.0" prefWidth="142.0" styleClass="round-red" text="Proceed To Admission">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnDocSave" mnemonicParsing="false" prefHeight="52.0" prefWidth="124.0" text="Save">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

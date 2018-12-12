@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="50.0" prefWidth="379.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.admin.master.payment.FXMLSingleHeadAssignController">
+    <stylesheets>
+        <URL value="@fxmlsingleheadassign.css" />
+    </stylesheets>
+<children><CheckBox fx:id="chkPaymentHead" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" prefWidth="173.0" wrapText="true" /><TextField fx:id="txtPaymentAmount" layoutX="197.0" layoutY="13.0" prefHeight="25.0" prefWidth="164.0" />
+</children>
+</AnchorPane>

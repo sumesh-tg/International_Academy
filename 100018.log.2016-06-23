@@ -1,0 +1,44 @@
+2016-06-23 10:07:39 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:07:39 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:24:27 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:24:27 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:35:15 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:35:15 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:42:52 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:42:52 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:46:59 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:46:59 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:51:33 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:51:33 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:54:45 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:54:45 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:59:39 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 10:59:39 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 11:02:07 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 11:02:07 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 11:04:44 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 11:04:44 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 11:22:50 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 11:22:50 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 12:43:53 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 12:43:53 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 12:48:17 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 12:48:17 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 12:52:32 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 12:52:32 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 14:53:41 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 14:53:41 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 14:53:48 ERROR [com.zs.ina.enquiry.EnquiryMainViewController$2] [branch=Kollam] [user=jins] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/International_Academy/dist/run363175557/International_Academy.jar!/com/zs/ina/agency/FXMLAgencyOffice.fxml
+
+2016-06-23 14:53:49 ERROR [com.zs.ina.enquiry.EnquiryMainViewController$2] [branch=Kollam] [user=jins] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/International_Academy/dist/run363175557/International_Academy.jar!/com/zs/ina/agency/FXMLAgencyOffice.fxml
+
+2016-06-23 14:59:31 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 14:59:31 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 15:08:04 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 15:08:04 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 15:09:42 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 15:09:42 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-23 18:21:20 INFO  [zs.com.ina.db.mysql.pool.DBPool] [branch=] [user=] Error While Creating Connection :=> java.sql.SQLException: null,  message from server: "Host 'User04-PC' is not allowed to connect to this MySQL server"
+2016-06-23 18:21:21 INFO  [zs.com.ina.db.mysql.pool.DBPool] [branch=] [user=] Error While Creating Connection :=> java.sql.SQLException: null,  message from server: "Host 'User04-PC' is not allowed to connect to this MySQL server"

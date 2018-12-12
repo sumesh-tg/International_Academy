@@ -1,0 +1,9 @@
+2016-07-19 10:53:33 ERROR [com.zs.ina.admin.mainView.MasterTableFXMLController$11] [branch=Kollam] [user=Administrator] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run533660629/International_Academy.jar!/com/zs/ina/admin/master/payment/FXMLMakeMandatory.fxml
+
+2016-07-19 10:53:36 ERROR [com.zs.ina.admin.mainView.MasterTableFXMLController$11] [branch=Kollam] [user=Administrator] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run533660629/International_Academy.jar!/com/zs/ina/admin/master/payment/FXMLMakeMandatory.fxml
+
+2016-07-19 12:02:36 ERROR [com.zs.ina.admin.master.payment.dao.PaymentIMPL] [branch=Kollam] [user=Administrator] java.sql.SQLException: Column 'mandatory_id' not found.
+2016-07-19 12:35:38 ERROR [com.zs.ina.admin.master.payment.dao.PaymentIMPL] [branch=Kollam] [user=Administrator] java.sql.SQLException: No value specified for parameter 3
+2016-07-19 12:35:51 ERROR [com.zs.ina.admin.master.payment.dao.PaymentIMPL] [branch=Kollam] [user=Administrator] java.sql.SQLException: No value specified for parameter 3

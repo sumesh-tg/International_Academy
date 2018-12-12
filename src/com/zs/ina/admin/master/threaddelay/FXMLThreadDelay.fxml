@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="225.0" prefWidth="413.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.admin.master.threaddelay.FXMLThreadDelayController">
+    <stylesheets>
+        <URL value="@fxmlthreaddelay.css" />
+    </stylesheets>
+<children><Label layoutX="74.0" layoutY="88.0" text="Refresh Seconds" /><TextField fx:id="txtSeconds" layoutX="185.0" layoutY="84.0" prefHeight="25.0" prefWidth="121.0" /><Button fx:id="btnSave" layoutX="185.0" layoutY="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" styleClass="button-submit" text="Save" /><HBox alignment="CENTER" layoutY="-2.0" maxWidth="1.7976931348623157E308" prefHeight="42.0" prefWidth="439.0" style="-fx-background-color: #08468F;">
+<children>
+<Label layoutX="133.0048828125" layoutY="26.5" prefHeight="20.0" prefWidth="110.0" styleClass="fonttitlelbl" text="Refresh Seconds" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font>
+</Label>
+</children>
+</HBox>
+</children>
+</AnchorPane>

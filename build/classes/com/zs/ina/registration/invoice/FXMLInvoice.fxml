@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.registration.invoice.FXMLInvoiceController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="22.0" style="-fx-background-color: #08468F;">
+         <children>
+            <Label layoutX="273.0" layoutY="14.0" text="Pay Slip" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../enquiry/images/enquiry_icons.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER">
+         <children>
+            <Label text="International Academy">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Pay Slip">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="vboxDynaPaySlip" style="-fx-padding: 8;" styleClass="vboxDynaPaySlip">
+         <children>
+            <GridPane hgap="10.0" maxWidth="1.7976931348623157E308" style="-fx-border-color: grey;" vgap="5.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="0.0" prefWidth="163.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <Label maxWidth="327.0" minWidth="327.0" prefHeight="19.0" prefWidth="327.0" styleClass="small_title" text="Tution Fee">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label maxWidth="327.0" minWidth="327.0" prefHeight="19.0" prefWidth="327.0" styleClass="small_title" text="Study Material Fee" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="327.0" styleClass="small_title" text="Caution Deposit" GridPane.rowIndex="3" />
+                  <Label prefHeight="20.0" prefWidth="327.0" styleClass="small_title" text="Library Fee" GridPane.rowIndex="4" />
+                  <Label prefHeight="20.0" prefWidth="327.0" styleClass="small_title" text="Examination Fee" GridPane.rowIndex="5" />
+               </children>
+               <styleClass>
+                  <String fx:value="gridStyle" />
+                  <String fx:value="gridDynaPaySlip" />
+               </styleClass>
+            </GridPane>
+            <HBox alignment="CENTER_RIGHT" prefWidth="200.0" style="-fx-spacing: 8;">
+               <children>
+                  <Label text="Total" />
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="150.0" style="-fx-border-color: grey; -fx-border-width: 0 1 1 1;" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT">
+         <VBox.margin>
+            <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+         </VBox.margin>
+         <children>
+            <Button fx:id="btnPrint" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" styleClass="round-red" text="Print">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

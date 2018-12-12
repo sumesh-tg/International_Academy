@@ -1,0 +1,14 @@
+2016-11-09 14:35:39 INFO  [com.zs.ina.accounts.FXMLAccountsInboxController$1$2] [branch=Kochi] [user=s] 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run218678302/International_Academy.jar!/com/zs/ina/accounts/master/tax/FXMLMasterTax.fxml
+
+2016-11-09 14:35:41 INFO  [com.zs.ina.accounts.FXMLAccountsInboxController$1$2] [branch=Kochi] [user=s] 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run218678302/International_Academy.jar!/com/zs/ina/accounts/master/tax/FXMLMasterTax.fxml
+
+2016-11-09 14:40:30 INFO  [com.zs.ina.accounts.FXMLAccountsInboxController$1$2] [branch=Kochi] [user=s] 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run1746338931/International_Academy.jar!/com/zs/ina/accounts/master/tax/FXMLMasterTax.fxml
+
+2016-11-09 18:29:13 ERROR [com.zs.ina.common.inbox.commonpool.CommonPoolIMPL] [branch=Kollam] [user=arun] java.sql.BatchUpdateException: Table 'ia_reg.enquiry_expiry_vw' doesn't exist
+2016-11-09 18:29:33 ERROR [com.zs.ina.common.inbox.commonpool.CommonPoolIMPL] [branch=Kollam] [user=arun] java.sql.BatchUpdateException: Table 'ia_reg.enquiry_expiry_vw' doesn't exist
+2016-11-09 18:29:53 ERROR [com.zs.ina.common.inbox.commonpool.CommonPoolIMPL] [branch=Kollam] [user=arun] java.sql.BatchUpdateException: Table 'ia_reg.enquiry_expiry_vw' doesn't exist
+2016-11-09 18:30:13 ERROR [com.zs.ina.common.inbox.commonpool.CommonPoolIMPL] [branch=Kollam] [user=arun] java.sql.BatchUpdateException: Table 'ia_reg.enquiry_expiry_vw' doesn't exist
+2016-11-09 18:30:33 ERROR [com.zs.ina.common.inbox.commonpool.CommonPoolIMPL] [branch=Kollam] [user=arun] java.sql.BatchUpdateException: Table 'ia_reg.enquiry_expiry_vw' doesn't exist

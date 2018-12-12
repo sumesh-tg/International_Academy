@@ -1,0 +1,103 @@
+2016-06-20 09:30:14 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 09:30:14 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 09:32:51 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 09:32:51 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 10:25:25 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 10:25:25 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 11:50:41 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 11:50:41 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 11:51:34 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 11:51:34 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:05:11 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:05:11 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:45:48 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:45:48 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:47:07 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:47:08 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:50:05 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:50:05 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:55:28 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 12:55:28 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 13:01:20 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 13:01:20 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 13:05:05 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 13:05:05 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 13:07:39 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 13:07:39 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 14:11:54 INFO  [zs.com.ina.db.mysql.pool.DBPool] [branch=Kollam] [user=jins] Error While Creating Connection :=> com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2016-06-20 14:13:08 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 14:13:08 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 14:25:06 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 14:25:06 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 14:27:15 ERROR [com.zs.ina.enquiry.EnquiryMainViewController$23$1] [branch=Kollam] [user=jins] javax.mail.internet.AddressException: Illegal address in string ``''
+2016-06-20 15:11:41 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eas.country' in 'field list'
+2016-06-20 15:11:42 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eas.country' in 'field list'
+2016-06-20 15:11:47 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eas.country' in 'field list'
+2016-06-20 15:12:07 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eas.country' in 'field list'
+2016-06-20 15:12:27 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eas.country' in 'field list'
+2016-06-20 15:12:47 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eas.country' in 'field list'
+2016-06-20 15:14:24 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ewe.profession' in 'field list'
+2016-06-20 15:14:26 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ewe.profession' in 'field list'
+2016-06-20 15:14:27 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ewe.profession' in 'field list'
+2016-06-20 15:14:27 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ewe.profession' in 'field list'
+2016-06-20 15:14:47 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ewe.profession' in 'field list'
+2016-06-20 15:15:07 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ewe.profession' in 'field list'
+2016-06-20 15:15:27 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ewe.profession' in 'field list'
+2016-06-20 15:17:18 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eam.profession' in 'field list'
+2016-06-20 15:17:20 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eam.profession' in 'field list'
+2016-06-20 15:17:21 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eam.profession' in 'field list'
+2016-06-20 15:17:22 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eam.profession' in 'field list'
+2016-06-20 15:17:42 ERROR [com.zs.ina.common.inbox.retrieve.InboxRetrievalIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'eam.profession' in 'field list'
+2016-06-20 15:23:00 ERROR [com.zs.ina.common.email.E_MailSender] [branch=Kollam] [user=arun] javax.mail.internet.AddressException: Illegal address in string ``''
+2016-06-20 15:39:14 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 15:39:14 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 15:41:44 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 15:41:44 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 15:42:34 ERROR [com.zs.ina.enquiry.EnquiryMainViewController$24$1] [branch=Kollam] [user=jins] javax.mail.internet.AddressException: Illegal address in string ``''
+2016-06-20 15:43:15 ERROR [com.zs.ina.enquiry.EnquiryMainViewController$24$1] [branch=Kollam] [user=jins] javax.mail.internet.AddressException: Illegal address in string ``''
+2016-06-20 15:51:53 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 15:51:53 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 15:58:47 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 15:58:47 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:00:13 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:00:13 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:03:52 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:03:52 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:04:48 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:04:48 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:06:20 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:06:20 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:08:17 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:08:17 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:10:07 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:10:07 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:18:55 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:18:55 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:24:45 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:24:45 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:57:00 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 16:57:00 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:16:54 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:16:54 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:19:08 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:19:08 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:20:59 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:20:59 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:24:54 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:24:54 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:35:05 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:35:05 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:39:40 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:39:40 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:42:46 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:42:46 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:49:24 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:49:24 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:57:16 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 17:57:17 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 18:05:33 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 18:05:33 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 18:06:11 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-20 18:06:11 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 

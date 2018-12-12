@@ -1,0 +1,3 @@
+2016-11-17 09:49:14 ERROR [com.zs.ina.accounts.invoice.FXMLAllInvoicesController$9$2] [branch=Kochi] [user=s] java.lang.NullPointerException
+2016-11-17 11:36:25 ERROR [com.zs.ina.accounts.invoice.FXMLAllInvoicesController$9$2] [branch=Kochi] [user=s] java.lang.NullPointerException
+2016-11-17 17:58:37 ERROR [com.zs.ina.accounts.invoice.FXMLAllInvoicesController$9$2] [branch=Kochi] [user=s] java.lang.NullPointerException

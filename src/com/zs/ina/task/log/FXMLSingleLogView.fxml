@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefWidth="278.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.task.log.FXMLSingleLogViewController">
+    <stylesheets>
+        <URL value="@fxmlsinglelogview.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lblDate" layoutX="215.0" layoutY="5.0" maxWidth="1.7976931348623157E308" styleClass="lbldate" text="Date" AnchorPane.rightAnchor="5.0" />
+      <Label fx:id="lblRemark" layoutX="56.0" layoutY="27.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="230.0" text="Call Not Picking" />
+      <VBox fx:id="vboxCircle" alignment="CENTER" layoutX="-9.0" layoutY="3.0" prefHeight="64.0" prefWidth="42.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="35.0" prefWidth="54.0">
+               <children>
+                  <Circle fx:id="circle" fill="DODGERBLUE" radius="17.0" stroke="#f2eeee" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Label fx:id="lblBigLetter" alignment="CENTER" text="IA" textFill="#f8f8f8">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </children></VBox>
+      <Label fx:id="lblUserName" layoutX="55.0" layoutY="10.0" styleClass="lblusername" text="Username" textFill="#571010">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSubStatusChange" layoutX="56.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="132.0" styleClass="lblAssesmentStatus" text="Show Assessment Status Changes" />
+      <Label fx:id="lblTimeAgo" layoutX="228.0" layoutY="42.0" maxWidth="1.7976931348623157E308" text="Time  Ago" AnchorPane.rightAnchor="5.0">
+<font>
+<Font name="Gautami" size="9.0" />
+</font></Label>
+   </children>
+</AnchorPane>

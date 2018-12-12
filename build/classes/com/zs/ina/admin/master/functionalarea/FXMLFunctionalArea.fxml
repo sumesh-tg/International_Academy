@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="1107.0" styleClass="mainFxmlClass,gradient1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.zs.ina.admin.master.functionalarea.FXMLFunctionalAreaController">
+    <stylesheets>
+        <URL value="@fxmlfunctionalarea.css" />
+    </stylesheets>
+<children><Pane fx:id="mainPane" layoutX="5.0" layoutY="7.0" prefHeight="443.0" prefWidth="489.0" styleClass="gradient1">
+<children><Label layoutX="35.0048828125" layoutY="100.5" styleClass="fontlbl" text="Operational Area" /><ComboBox fx:id="operationCmb" layoutX="219.0" layoutY="97.0" prefHeight="25.0" prefWidth="225.0" styleClass="fontlbl,gradient1" /><Label layoutX="35.009765625" layoutY="169.5" styleClass="fontlbl" text="Functional Area" /><TextField fx:id="functionalTxt" layoutX="219.0" layoutY="166.0" prefHeight="25.0" prefWidth="225.0" styleClass="fontlbl" /><Label layoutX="35.0146484375" layoutY="239.5" styleClass="fontlbl" text="Level" /><TextField fx:id="levelTxt" layoutX="219.0" layoutY="236.0" prefHeight="25.0" prefWidth="225.0" styleClass="fontlbl" /><Button fx:id="saveBtn" layoutX="373.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="26.0" prefWidth="71.0" styleClass="fontlbl,gradient1" text="Save" /><Button fx:id="clearBtn" layoutX="294.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleClearBtn" prefHeight="26.0" prefWidth="71.0" styleClass="fontlbl,gradient1" text="Clear" /><Label layoutX="115.8505859375" layoutY="32.5" styleClass="fonttitlelbl" text="Add functional Area's and course Level" />
+</children></Pane><Pane fx:id="tablePane" layoutX="514.0" layoutY="7.0" prefHeight="443.0" prefWidth="583.0" styleClass="gradient1">
+<children><TableView fx:id="functionalTableView" layoutX="5.0" layoutY="60.0" onKeyReleased="#handleFunctionalTableViewKeyReleased" onMouseClicked="#handleFunctionalTableView" prefHeight="378.0" prefWidth="571.0" styleClass="fontlbl,gradient1">
+  <columns>
+    <TableColumn fx:id="operationColumn" prefWidth="165.0" text="Operational Area" />
+    <TableColumn fx:id="functionalColumn" prefWidth="203.0" text="Functional Area" /><TableColumn fx:id="levelColumn" prefWidth="214.0" text="Level" /><TableColumn fx:id="idColumn" minWidth="0.0" prefWidth="10.0" />
+  </columns>
+</TableView><TextField fx:id="searchTxt" layoutX="8.0" layoutY="17.0" prefHeight="25.0" prefWidth="446.0" /><ImageView fx:id="searchImgView" fitHeight="26.0" fitWidth="25.0" layoutX="457.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../images/tabicon_search.png" />
+</image></ImageView>
+</children></Pane>
+</children>
+</AnchorPane>

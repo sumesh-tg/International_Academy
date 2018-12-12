@@ -1,0 +1,66 @@
+
+create or replace view hyperlink_count_counselor as
+SELECT 'Total Enquiries' as status, -1 as Status_id, 'D' as tabname, enq.enquiry_assigning as user, count(1)AS Total_count,
+sum(CASE WHEN east.enquiry_id is NULL THEN 0 ELSE 1 END) as study,
+sum(CASE WHEN ewt.enquiry_id is NULL THEN 0 ELSE 1 END) as Work,
+sum(CASE WHEN emt.enquiry_id is NULL THEN 0 ELSE 1 END) as Migrat,
+sum(CASE WHEN ett.enquiry_id is NULL THEN 0 ELSE 1 END) as Training,enq.branch
+from enquiry_details enq
+LEFT JOIN  enquiry_assessment_study_tbl east  on (east.enquiry_id=enq.enquiry_id) and east.latest_flag='y'
+LEFT JOIN enquiry_assessment_work_tbl ewt  on (ewt.enquiry_id = enq.enquiry_id) and ewt.latest_flag='y'
+LEFT JOIN enquiry_assessment_migrate_tbl emt  on (emt.enquiry_id = enq.enquiry_id) and emt.latest_flag='y'
+LEFT JOIN enquiry_assessment_training_tbl ett  on (ett.enquiry_id = enq.enquiry_id) and ett.latest_flag='y'
+LEFT JOIN employee_role_branch erb ON (erb.USER_NAME=enq.enquiry_assigning)
+group by enq.enquiry_assigning,enq.branch
+UNION
+SELECT 'Starred' as status, -2 as Status_id, 'D' as tabname, enq.enquiry_assigning as user, sum( case when enq.rating=1 then 1 else 0 end )  AS Total_count,
+sum(CASE WHEN east.enquiry_id is NULL THEN 0 ELSE 1 END) as study,
+sum(CASE WHEN ewt.enquiry_id is NULL THEN 0 ELSE 1 END) as Work,
+sum(CASE WHEN emt.enquiry_id is NULL THEN 0 ELSE 1 END) as Migrat,
+sum(CASE WHEN ett.enquiry_id is NULL THEN 0 ELSE 1 END) as Training,enq.branch
+from enquiry_details enq
+LEFT JOIN  enquiry_assessment_study_tbl east  on (east.enquiry_id=enq.enquiry_id) and east.latest_flag='y' AND enq.rating=1
+LEFT JOIN enquiry_assessment_work_tbl ewt  on (ewt.enquiry_id = enq.enquiry_id) and ewt.latest_flag='y' AND enq.rating=1
+LEFT JOIN enquiry_assessment_migrate_tbl emt  on (emt.enquiry_id = enq.enquiry_id) and emt.latest_flag='y' AND enq.rating=1
+LEFT JOIN enquiry_assessment_training_tbl ett  on (ett.enquiry_id = enq.enquiry_id) and ett.latest_flag='y' AND enq.rating=1
+INNER JOIN employee_role_branch erb ON (erb.USER_NAME=enq.enquiry_assigning)
+GROUP BY enq.enquiry_assigning
+UNION
+select m.app_status , m.app_status_id as Status_id, 'A' as tabname,  st.counsellor as user, sum( case when st.assement_status_id IS NULL then 0 else 1 end)AS Total_count,
+sum(CASE WHEN east.enquiry_id is NULL THEN 0 ELSE 1  END) as study,
+   
+sum(CASE WHEN ewt.enquiry_id is NULL THEN 0 ELSE 1  END)  as Work,
+   
+sum(CASE WHEN emt.enquiry_id is NULL THEN 0 ELSE 1  END) as Migrat,
+   
+sum(CASE WHEN ett.enquiry_id is NULL THEN 0 ELSE 1  END) as Training,enq.branch
+   
+
+from mastertbl_app_status m
+LEFT OUTER JOIN enquiry_assesment_status_tbl st on (m.app_status_id=st.enquiry_status)
+LEFT OUTER JOIN enquiry_details enq on (enq.enquiry_id = st.enquiry_id)
+
+LEFT JOIN  enquiry_assessment_study_tbl east  on (east.enquiry_id=st.enquiry_id) and east.latest_flag='y'
+LEFT JOIN enquiry_assessment_work_tbl ewt  on (ewt.enquiry_id = st.enquiry_id) and ewt.latest_flag='y'
+LEFT JOIN enquiry_assessment_migrate_tbl emt  on (emt.enquiry_id = st.enquiry_id) and emt.latest_flag='y'
+LEFT JOIN enquiry_assessment_training_tbl ett  on (ett.enquiry_id = st.enquiry_id) and ett.latest_flag='y'
+INNER JOIN employee_role_branch erb ON erb.USER_NAME=enq.enquiry_assigning
+group by enq.enquiry_assigning,m.app_status, m.app_status_id
+
+-- UNION
+-- SELECT mst.task_follow_status, mst.task_follow_id as Status_Id, 'T' as tabname, enq.enquiry_assigning as User,
+-- sum( case when det.assessment_substatus IS NULL then 0 else 1 end) AS Total_count,
+-- sum(CASE WHEN (CASE WHEN east.enquiry_id is NULL THEN 0 ELSE 1 END) THEN(case when det.assessment_substatus IS NULL then 0 else 1 end)else 0 END) as study,
+-- sum(CASE WHEN (CASE WHEN ewt.enquiry_id is NULL THEN 0 ELSE 1 END) THEN(case when det.assessment_substatus IS NULL then 0 else 1 end)ELSE 0 END ) as Work2,
+-- sum(CASE WHEN (CASE WHEN emt.enquiry_id is NULL THEN 0 ELSE 1 END) THEN(case when det.assessment_substatus IS NULL then 0 else 1 end)ELSE 0 END) as Migrat,
+-- sum(CASE WHEN (CASE WHEN ett.enquiry_id is NULL THEN 0 ELSE 1 END) THEN(case when det.assessment_substatus IS NULL then 0 else 1 end) ELSE 0 END) as Training,enq.branch
+-- from mastertbl_task_follow_status mst
+-- LEFT OUTER JOIN task_details det ON (det.assessment_substatus =mst.task_follow_id and det.latest_flag='y')
+-- LEFT OUTER JOIN task_master tms ON (tms.task_id = det.task_id)
+-- LEFT JOIN enquiry_details enq ON (tms.keyword=enq.enquiry_id)
+-- LEFT JOIN employee_role_branch erb ON (erb.USER_NAME=tms.assigned_to)
+-- LEFT JOIN enquiry_assessment_study_tbl east  on (east.enquiry_id=enq.enquiry_id )AND east.latest_flag='y'
+-- LEFT JOIN enquiry_assessment_work_tbl ewt  on (ewt.enquiry_id = enq.enquiry_id )AND ewt.latest_flag='y'
+-- LEFT JOIN enquiry_assessment_migrate_tbl emt  on (emt.enquiry_id = enq.enquiry_id )AND emt.latest_flag='y'
+-- LEFT JOIN enquiry_assessment_training_tbl ett  on (ett.enquiry_id = enq.enquiry_id ) AND ett.latest_flag='y'
+-- group by enq.enquiry_assigning , mst.task_follow_status,mst.task_follow_id 

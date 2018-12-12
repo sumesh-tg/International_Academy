@@ -1,0 +1,7 @@
+create or replace view listofassigneddateforcurrentuser_vw as
+select hs.created_date, assigned_to, hs.enquiry_id, assigned_date
+from history_enquiry_assigning_tbl hs,
+                                enquiry_details dt
+where hs.enquiry_id = dt.enquiry_id
+  and hs.assigned_to = dt.enquiry_assigning
+  and dt.completion_flag <> 1 

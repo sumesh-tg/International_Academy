@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="ia_login_root" prefHeight="507.0" prefWidth="705.0" styleClass="ia_login_root" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.login.FXMLLoginController">
+    <children>
+      <HBox alignment="CENTER" layoutY="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <AnchorPane>
+               <children>
+                      <ImageView fitHeight="41.0" fitWidth="129.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" rotate="-35.5">
+                          <image>
+                              <Image url="@images/academy.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView fitHeight="147.0" fitWidth="370.0" layoutX="5.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@images/globe.png" />
+                          </image>
+                      </ImageView>
+                      <Pane id="ia_login_pane" fx:id="ia_login_pane" layoutX="73.0" layoutY="136.0" prefHeight="252.0" prefWidth="555.0" style="-fx-background-color: #C6D4F9; -fx-border-color: #4565CC; -fx-border-width: 2px;" styleClass="ia_login_pane" AnchorPane.rightAnchor="77.0">
+                          <effect>
+                              <DropShadow radius="14.5575" width="39.23" />
+                          </effect>
+                          <children>
+                              <Pane fx:id="ia_login_controls_pane" layoutX="252.0" layoutY="74.0">
+                                  <children>
+                                      <Pane>
+                                          <children>
+                                              <Label id="ia_usr_label" fx:id="lbluser" layoutY="9.0" styleClass="ia_usr_label" text="User name" textFill="#004a96" />
+                                              <TextField id="txtuser_login" fx:id="txtuser_login" layoutX="85.0" minWidth="-Infinity" onKeyPressed="#handleUserKeyPressed" prefHeight="25.0" prefWidth="184.0" styleClass="login_control">
+                                                  <tooltip>
+                                                      <Tooltip text="Enter user name here" />
+                                                  </tooltip>
+                                              </TextField>
+                                          </children>
+                                      </Pane>
+                                      <Pane layoutX="5.0" layoutY="42.0">
+                                          <children>
+                                              <PasswordField id="txtpassword_login" fx:id="txtpassword_login" layoutX="80.0" layoutY="-1.0" minWidth="-Infinity" onKeyPressed="#handlePassKeyPressed" prefHeight="25.0" prefWidth="184.0" styleClass="login_control">
+                                                  <tooltip>
+                                                      <Tooltip text="Enter password here" />
+                                                  </tooltip>
+                                              </PasswordField>
+                                              <Label fx:id="lblpassword" layoutX="-5.0" layoutY="9.0" text="Password" textFill="#004a96" />
+                                          </children>
+                                      </Pane>
+                                  </children>
+                              </Pane>
+                              <CheckBox fx:id="chkRemeberMe" layoutX="338.8525390625" layoutY="155.75" mnemonicParsing="false" text="Remember password" textFill="#0764a7">
+                                  <font>
+                                      <Font name="System Bold" size="12.0" />
+                                  </font>
+                              </CheckBox>
+                              <Button id="login_button" fx:id="btnlogin" defaultButton="true" layoutX="464.459228515625" layoutY="189.5" mnemonicParsing="false" onAction="#handleloginButtonAction" style="-fx-background-color: #004A96;" styleClass="login_button" text="Login" textFill="#f5f2f2" />
+                              <ImageView id="image_login" fx:id="loginImageView" fitHeight="163.0" fitWidth="147.0" layoutX="58.0" layoutY="53.0" opacity="0.99" pickOnBounds="true" preserveRatio="true" styleClass="image_login">
+                                  <image>
+                                      <Image url="@images/login.png" />
+                                  </image>
+                              </ImageView>
+                              <Label fx:id="msglogin" layoutX="316.0" layoutY="194.0" textFill="#e3141f">
+                                  <effect>
+                                      <Glow />
+                                  </effect>
+                              </Label>
+                          </children>
+                      </Pane>
+                      <Pane id="ia_header_pane" fx:id="ia_header_pane" layoutX="14.0" layoutY="15.0" prefHeight="58.0" prefWidth="383.0" styleClass="ia_header_pane">
+                          <children>
+                              <ImageView id="ia_logo" fitHeight="55.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" styleClass="ia_logo">
+                                  <image>
+                                      <Image url="@images/ia_logo.png" />
+                                  </image>
+                              </ImageView>
+                              <Label layoutX="57.0" layoutY="7.0" prefHeight="39.0" prefWidth="321.0" text="International Academy" textAlignment="CENTER" textFill="#df181b" textOverrun="LEADING_ELLIPSIS">
+                                  <font>
+                                      <Font name="Droid Sans Japanese" size="28.0" />
+                                  </font>
+                              </Label>
+                              <Label id="ia_motto" fx:id="ia_motto" layoutX="268.464599609375" layoutY="42.5" styleClass="ia_motto" text="Your Friend Abroad" textFill="#004a96">
+                                  <font>
+                                      <Font name="Arial Italic" size="12.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </Pane>
+                      <Pane fx:id="copyright_pane" layoutX="1.0" layoutY="395.0" prefHeight="111.0" prefWidth="698.0">
+                          <children>
+                              <Pane fx:id="disp_copyright_pane" layoutX="17.0" layoutY="60.0">
+                                  <children>
+                                      <Label fx:id="powered" layoutX="1.464599609375" onMouseClicked="#handleZoftLogoDisp" text="Powered By" textFill="#004a96" />
+                                      <ImageView fx:id="zoftlogo" fitHeight="34.0" fitWidth="163.0" layoutY="12.0" onMouseClicked="#handleZoftLogoDisp" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@images/zoft_logo.png" />
+                                          </image>
+                                      </ImageView>
+                                  </children>
+                              </Pane>
+                              <Label id="lblcopyright" layoutX="496.0" layoutY="11.0" prefHeight="16.0" prefWidth="200.0" styleClass="lblcopyright" text="© 2015-2016. All Rights Reserved" textFill="#004a96">
+                                  <font>
+                                      <Font size="11.0" />
+                                  </font>
+                              </Label>
+                              <Label layoutX="501.464599609375" layoutY="24.0" text="International Academy" textFill="#df181b">
+                                  <font>
+                                      <Font size="16.0" />
+                                  </font>
+                              </Label>
+                              <Pane id="ia_address_pane1" fx:id="ia_address_pane" layoutX="265.0" layoutY="56.0" styleClass="ia_address_pane1">
+                                  <children>
+                                      <Label layoutX="72.502685546875" layoutY="27.51800537109375" text="email:ia.offer@gmail.com">
+                                          <font>
+                                              <Font size="10.0" />
+                                          </font>
+                                      </Label>
+                                      <Label layoutX="85.502685546875" layoutY="15.0" text="Fax: +91 484-4155100">
+                                          <font>
+                                              <Font size="10.0" />
+                                          </font>
+                                      </Label>
+                                      <Label layoutX="-0.9619140625" text="Telephone: +91 -484 2366125, 4155111">
+                                          <font>
+                                              <Font size="10.0" />
+                                          </font>
+                                      </Label>
+                                  </children>
+                              </Pane>
+                              <Pane fx:id="ia_address_pane2" layoutX="478.0" layoutY="53.0" prefHeight="48.0" prefWidth="212.0">
+                                  <children>
+                                      <Label layoutX="-0.464599609375" text="2nd floor, Bright House ">
+                                          <font>
+                                              <Font size="10.0" />
+                                          </font>
+                                      </Label>
+                                      <Label layoutX="1.0" layoutY="29.5" text="Pallimukku, Ernakulam Cochin (Kochi)-16">
+                                          <font>
+                                              <Font size="10.0" />
+                                          </font>
+                                      </Label>
+                                      <Label layoutX="0.535400390625" layoutY="15.0" text="Karimpatta Cross Road ">
+                                          <font>
+                                              <Font size="10.0" />
+                                          </font>
+                                      </Label>
+                                  </children>
+                              </Pane>
+                          </children>
+                      </Pane>
+                  <ImageView fx:id="imgClose" fitHeight="21.0" fitWidth="21.0" layoutX="681.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+      <Image url="@images/24px-windows_close_program.png" />
+      </image>
+                  </ImageView>
+                  <ImageView fx:id="imgMinimize" fitHeight="30.0" fitWidth="30.0" layoutX="646.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+      <Image url="@images/32x32.png" />
+      </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

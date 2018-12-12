@@ -1,0 +1,13 @@
+
+
+CREATE or REPLACE view 
+
+ENQUIRY_EXPIRY_VW
+
+AS 
+
+SELECT MinAssignedDate, DATE_ADD(MinAssignedDate,INTERVAL  mst.enquiry_duration SECOND) as end_date
+       , mst.user_name as assigned_to, lst.enquiry_id
+FROM MinAssignDate_Current_User_Vw lst,
+                                master_common_pool_config mst
+where mst.user_name = lst.assigned_to 

@@ -1,0 +1,21 @@
+.vboxastatus{
+    -fx-spacing:5;
+    -fx-padding:5;
+}
+.sideTitledPane{
+        -fx-text-fill: white;  
+}
+.sideTitledPane > .title {
+
+     -fx-background-color:white, #08468F, #08468F;
+   
+}
+.sideTitledPane.title > .arrow-button .arrow{
+    -fx-background-color: white, white;
+}
+.btnLeftLinks{
+    -fx-background-radius:0;
+    -fx-border-radius:0;
+    -fx-background-color: #08468F;
+    -fx-text-fill: white;
+}

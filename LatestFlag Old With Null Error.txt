@@ -1,0 +1,54 @@
+BEGIN
+DECLARE updt DATETIME;
+DECLARE crdt DATETIME;
+SET @enq_id=enq_id;
+SET @updtt =CONCAT("SELECT max(updated_date) INTO @updt
+from ",tableName," WHERE enquiry_id='",enq_id,"' and latest_flag <> 'y'");
+PREPARE stmtupdt FROM @updtt;
+EXECUTE stmtupdt;
+DEALLOCATE PREPARE stmtupdt;
+
+
+SET @crdtt = CONCAT("SELECT max(created_date) INTO @crdt
+from ", tableName, 
+" WHERE enquiry_id='",enq_id,"'
+  and latest_flag <> 'y'");
+PREPARE stmtcrdt FROM @crdtt;
+EXECUTE stmtcrdt;
+DEALLOCATE PREPARE stmtcrdt;
+IF (@updtt is NULL) THEN
+ select 'YOUR MESSAGE HERE' ;
+
+  SET @upcr=CONCAT("UPDATE ", tableName,"
+  set latest_flag = 'y'
+  where enquiry_id ='" ,enq_id,"'
+  and created_date = '",@crdt,"' LIMIT 1");
+  PREPARE stmt3 FROM @upcr;
+  EXECUTE stmt3;
+  DEALLOCATE PREPARE stmt3;
+ELSE 
+
+ IF (@crdt > @updt) THEN
+  
+			
+			SET @upcr1=CONCAT("UPDATE ", tableName,"
+  set latest_flag = 'y'
+  where enquiry_id ='" ,enq_id,"'
+  and created_date = '",@crdt,"' LIMIT 1");
+			PREPARE stmt5 FROM @upcr1;
+			EXECUTE stmt5;
+			DEALLOCATE PREPARE stmt5;
+
+	ELSE
+
+			SET @upup=CONCAT("UPDATE ", tableName,"
+												set latest_flag = 'y'
+												where enquiry_id ='" ,enq_id,"'
+												and updated_date = '",@updt,"' LIMIT 1 ");
+			PREPARE stmt4 FROM @upup;
+			EXECUTE stmt4;
+			DEALLOCATE PREPARE stmt4;
+
+	END IF;
+END IF;
+END

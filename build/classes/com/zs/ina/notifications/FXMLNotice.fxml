@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="442.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.notifications.FXMLNoticeController">
+    <stylesheets>
+        <URL value="@fxmlnotice.css" />
+    </stylesheets>
+<children>
+<VBox layoutX="38.0" layoutY="22.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children>
+<HBox alignment="CENTER" layoutX="90.0302734375" layoutY="14.0" prefHeight="33.0" style="-fx-background-color: #08468F;">
+<children><Label layoutX="90.0302734375" layoutY="14.0" text="Notice" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font></Label>
+</children>
+</HBox>
+<HBox layoutX="34.0048828125" layoutY="42.0" spacing="30.0">
+<children><Label layoutX="34.0048828125" layoutY="45.5" prefWidth="74.0" styleClass="fontlbl" text="Notice Title" />
+<HBox fx:id="noticeHbox" layoutX="168.0" layoutY="42.0">
+<children>
+<HBox fx:id="noticeHbox">
+<children><TextField fx:id="noticeTxt" layoutX="168.0" layoutY="42.0" prefHeight="25.0" prefWidth="215.0" />
+</children>
+</HBox>
+</children>
+</HBox>
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="34.009765625" layoutY="83.0" spacing="30.0">
+<children><Label layoutX="34.009765625" layoutY="92.5" prefWidth="74.0" styleClass="fontlbl" text="Description" /><TextArea fx:id="descriptionTxtArea" layoutX="168.0" layoutY="86.0" prefHeight="111.0" prefWidth="215.0" styleClass="gradient1" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="34.009765625" layoutY="214.0" spacing="30.0">
+<children><Label layoutX="34.009765625" layoutY="220.5" prefWidth="74.0" styleClass="fontlbl" text="Branch" /><ComboBox fx:id="branchCmb" layoutX="168.0" layoutY="217.0" prefHeight="25.0" prefWidth="215.0" styleClass="gradient1" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="34.0" layoutY="258.0" spacing="30.0">
+<children><Label layoutX="34.0" layoutY="265.0" prefWidth="74.0" styleClass="fontlbl" text="Expire Date" /><DatePicker fx:id="expireDatePicker" layoutX="168.0" layoutY="261.0" onAction="#handleexpireDatePicker" prefHeight="25.0" prefWidth="215.0" styleClass="gradient1" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox alignment="CENTER_RIGHT" layoutX="178.0" layoutY="298.0" spacing="10.0">
+<children><Button fx:id="exelUploadBtn" mnemonicParsing="false" onAction="#handleExelUpload" styleClass="gradient1,fontlbl" text="Exel Upload" /><Button fx:id="cancelBtn" layoutX="182.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleCancelBtn" styleClass="gradient1,fontlbl" text="Cancel" /><Button fx:id="deleteBtn" layoutX="255.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleDeleteBtn" styleClass="gradient1,fontlbl" text="Delete" /><Button fx:id="saveBtn" layoutX="321.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="26.0" prefWidth="64.0" styleClass="gradient1,fontlbl" text="Save" />
+</children>
+<VBox.margin>
+<Insets left="5.0" right="5.0" top="30.0" />
+</VBox.margin>
+</HBox>
+</children>
+</VBox>
+</children>
+</AnchorPane>

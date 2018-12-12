@@ -1,0 +1,20 @@
+.lblStudyTitle{
+   -fx-background-color:#0a3d9d;
+   -fx-text-fill:white;
+}
+.plus-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("images/plus.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 20 20;
+    -fx-padding: 3 15 3 15;
+}
+.close-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("images/close.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 20 20;
+    -fx-padding: 3 15 3 15;
+}

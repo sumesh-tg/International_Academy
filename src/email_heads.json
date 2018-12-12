@@ -1,0 +1,60 @@
+{
+    "ENQUIRY": {
+        "ENQUIRY_ADD": [
+            "[USER]", "[PHONE]",
+            "[EMAIL]", "[LOCATION]",
+            "[BRANCH]", "[COUNSELOR]",
+            "[PROGRAM/TRAINING_LIST_IN_TABLE_FORMAT]"
+        ],
+        "ENQUIRY_UPDATE": [
+            "[USER]", "[PHONE]",
+            "[EMAIL]", "[LOCATION]",
+            "[BRANCH]", "[COUNSELOR]",
+            "[PROGRAM/TRAINING_LIST_IN_TABLE_FORMAT]"
+        ]
+    },
+    "DOCUMENT": {
+        "DOCUMENT_PHOTO": [
+            "[USER]", "[PHONE]",
+            "[EMAIL]", "[VALID_INVALID_OR_DEFECTED]",
+            "[AGE]", "[COUNSELOR]",
+            "[OFFICE_NO]", "[COMPANY_EMAIL]"
+        ],
+        "DOCUMENT_INVALID": [
+            "[USER]", "[DOCUMENT_INVALID]"
+        ],
+        "DOCUMENT_DEFECTED": [
+            "[USER]", "[DOCUMENT_DEFECTED]"
+        ]
+
+    },
+    "ADMISSION": {
+        "ADMISSION_ADD": [
+            "[USER]", "[PHONE]",
+            "[EMAIL]", "[PROGRAM_REQUIRED]",
+            "[AGE]", "[COUNSELOR]",
+            "[OFFICE_NO]", "[COMPANY_EMAIL]"
+        ],
+        "ADMISSION_UPDATE": [
+            "[USER]", "[PHONE]",
+            "[EMAIL]", "[PROGRAM_REQUIRED]",
+            "[AGE]", "[COUNSELOR]",
+            "[OFFICE_NO]", "[COMPANY_EMAIL]"
+        ]
+    },
+    "USER CREATION": {
+        "CREATE_USER_LOGIN": [
+            "[USERNAME]", "[PASSWORD]",
+            "[EMAIL]", "[PHONE_NO]", "[BRANCH]",
+            "[DEFAULT_ROLE]", "[ROLES_LIST]"
+        ],
+        "UPDATE_USER_LOGIN": [
+            "[USERNAME]",
+            "[EMAIL]", "[PHONE_NO]", "[BRANCH]",
+            "[DEFAULT_ROLE]", "[ROLES_LIST]"
+        ],
+        "RESET_PASSWORD": [
+            "[USERNAME]", "[PASSWORD]"
+        ]
+    }
+}

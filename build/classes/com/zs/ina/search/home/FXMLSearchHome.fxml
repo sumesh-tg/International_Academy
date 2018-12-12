@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.search.home.FXMLSearchHomeController">
+    <stylesheets>
+        <URL value="@fxmlsearchhome.css" />
+    </stylesheets>
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../International_Academy/src/com/zs/ina/enquiry/images/closeBtn.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Search">
+            <items>
+                  <Menu mnemonicParsing="false" text="Edu. Provider">
+                    <items>
+                      <MenuItem fx:id="itemEduProviderView" mnemonicParsing="false" text="View All" /><MenuItem fx:id="itemAddEduProvider" mnemonicParsing="false" text="Add Edu Provider" /><MenuItem fx:id="itemAddEduCourseRequirements" mnemonicParsing="false" text="Add Edu Course Requirements" />
+                        <Menu mnemonicParsing="false" text="Master Form">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Add Country" />
+                              <MenuItem mnemonicParsing="false" text="Add Location" />
+                              <MenuItem mnemonicParsing="false" text="Add Currency Type" />
+                              <MenuItem mnemonicParsing="false" text="Add Institutions" />
+                          </items>
+                        </Menu>
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Training Courses">
+                     <items>
+                        <MenuItem fx:id="itemTrainingCourseView" mnemonicParsing="false" text="View All" /><MenuItem fx:id="itemAddTrainingCourse" mnemonicParsing="false" text="Add Training Course" /><MenuItem fx:id="itemTrainingCourseReqmts" mnemonicParsing="false" text="Training Course Requirements" />
+                        <Menu mnemonicParsing="false" text="Master Form">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Add Country" />
+                              <MenuItem mnemonicParsing="false" text="Add Location" />
+                              <MenuItem mnemonicParsing="false" text="Add Currency Type" />
+                              <MenuItem mnemonicParsing="false" text="Add Institutions" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Employer">
+                     <items>
+                        <MenuItem fx:id="itemEmployerView" mnemonicParsing="false" text="View All" />
+                        <MenuItem fx:id="itemAddEmployer" mnemonicParsing="false" text="Add Employer" />
+                        <MenuItem fx:id="itemAddVacancies" mnemonicParsing="false" text="Add Vacancies" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Migration Providers">
+                     <items>
+                        <MenuItem fx:id="itemMigrationProgramsView" mnemonicParsing="false" text="View All" />
+                        <MenuItem fx:id="itemMigrationProgramsAdd" mnemonicParsing="false" text="Add New Program Details" />
+                     </items>
+                  </Menu>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Master Forms">
+               <items>
+                  <MenuItem fx:id="itemEmplpyerAddCountryLoc" mnemonicParsing="false" text="Add Countries &amp; Locations" />
+                  <MenuItem fx:id="itemEmpCurrency" mnemonicParsing="false" text="Add Currency Type" />
+                  <MenuItem fx:id="itemEmpFeeType" mnemonicParsing="false" text="Fee Type" />
+                  <MenuItem fx:id="itemEmpJobTitle" mnemonicParsing="false" text="Job Title" />
+                  <MenuItem fx:id="itemEmpAge" mnemonicParsing="false" text="Age" />
+                  <MenuItem fx:id="itemEmpBoard" mnemonicParsing="false" text="Board" />
+                  <MenuItem fx:id="itemEmpMediumInstruction" mnemonicParsing="false" text="Medium Of Instructions" />
+                  <MenuItem fx:id="itemEmpProgramLevel" mnemonicParsing="false" text="Program Level" />
+                  <MenuItem fx:id="itemEmpProgramField" mnemonicParsing="false" text="Program Field" />
+                  <MenuItem fx:id="itemEmpDuration" mnemonicParsing="false" text="Duration" />
+                  <MenuItem fx:id="itemEmpProfession" mnemonicParsing="false" text="Profession" />
+                  <MenuItem fx:id="itemEmpLangTest" mnemonicParsing="false" text="Language Test" />
+                  <MenuItem fx:id="itemEmpTestScore" mnemonicParsing="false" text="Test Score" />
+                  <MenuItem fx:id="itemEmpTechnology" mnemonicParsing="false" text="Technology" />
+                  <MenuItem fx:id="itemKnowledgeLevel" mnemonicParsing="false" text="Knowledge Level" />
+                  <MenuItem fx:id="itemEmpSkill" mnemonicParsing="false" text="Skill" />
+                  <MenuItem fx:id="itemEmpSkillType" mnemonicParsing="false" text="Skill Type" />
+                  <MenuItem fx:id="itemEmpDocument" mnemonicParsing="false" text="Document Name" />
+                  <MenuItem fx:id="itemEmpSalary" mnemonicParsing="false" text="Salary" />
+                  <MenuItem fx:id="itemEmpAccomodation" mnemonicParsing="false" text="Accomodation" />
+                  <MenuItem fx:id="itemMigSubClass" mnemonicParsing="false" text="Sub Class" />
+                  <MenuItem fx:id="itemMIgOccuptnCat" mnemonicParsing="false" text="Occupation Categories" />
+                  <MenuItem fx:id="itemMigExperience" mnemonicParsing="false" text="Experience" />
+               </items>
+            </Menu>
+          <Menu disable="true" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ToolBar fx:id="toolBarSearchHome" layoutY="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" style="-fx-padding: 5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="472.0">
+        <items>
+          <Button fx:id="btnEmployer" contentDisplay="TOP" mnemonicParsing="false" prefHeight="84.0" prefWidth="131.0" text="Employer">
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/eduprovider.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button><Button fx:id="btnEduProvider" contentDisplay="TOP" mnemonicParsing="false" prefHeight="84.0" prefWidth="131.0" text="Educational Provider">
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/teacher-reading.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button><Button fx:id="btnMigration" contentDisplay="TOP" mnemonicParsing="false" prefHeight="84.0" prefWidth="131.0" text="Migration">
+<graphic><ImageView fitHeight="73.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@images/migration.png" />
+</image></ImageView>
+</graphic></Button><Button fx:id="btnTrainingPrograms" contentDisplay="TOP" mnemonicParsing="false" prefHeight="84.0" prefWidth="131.0" text="Training Program">
+<graphic><ImageView fitHeight="73.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@images/trainig-program.png" />
+</image></ImageView>
+</graphic></Button>
+        </items>
+      </ToolBar>
+      <TabPane fx:id="tabPaneSearchHome" layoutX="5.0" layoutY="85.0" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

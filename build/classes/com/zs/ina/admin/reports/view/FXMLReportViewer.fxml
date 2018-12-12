@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="view" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.admin.reports.view.FXMLReportViewerController">
+   <top>
+<VBox style="-fx-padding: 2;">
+<children><HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="567.0" style="-fx-border-color: #104fa2;">
+<children>
+<ImageView fx:id="imgViewLogo" fitHeight="49.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+<HBox.margin>
+<Insets left="20.0" />
+</HBox.margin>
+<image>
+<Image url="@images/ia_logo.png" />
+</image>
+</ImageView>
+<Label prefHeight="39.0" prefWidth="346.0" text="International Academy" textFill="#db1818">
+<font>
+<Font name="Times New Roman Bold" size="30.0" />
+</font>
+</Label>
+<HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="44.0" HBox.hgrow="ALWAYS">
+<children>
+<Label maxWidth="1.7976931348623157E308" prefHeight="30.0" text="Reports" HBox.hgrow="ALWAYS">
+<font>
+<Font name="System Bold" size="22.0" />
+</font>
+</Label><ComboBox fx:id="cmbBranch" prefHeight="25.0" prefWidth="128.0" promptText="Choose Branch">
+<HBox.margin>
+<Insets right="5.0" />
+</HBox.margin></ComboBox>
+</children>
+</HBox>
+</children>
+</HBox>
+<AnchorPane style="-fx-padding: 2;">
+<children>
+<HBox alignment="CENTER_RIGHT" layoutX="393.0" maxWidth="1.7976931348623157E308" spacing="2.0" AnchorPane.rightAnchor="5.0">
+<children>
+            <Label layoutX="393.0" layoutY="17.0" text="View Page" />
+            <ComboBox fx:id="pageList" layoutX="453.0" layoutY="14.0" onAction="#pageListSelected" prefHeight="29.0" prefWidth="67.0" />
+<VBox alignment="CENTER" layoutX="529.0" spacing="4.0">
+<children>
+            <Label layoutX="596.0" text="Zoom" />
+              <Slider fx:id="zoomLevel" blockIncrement="25.0" layoutX="529.0" layoutY="24.0" majorTickUnit="75.0" max="175.0" min="25.0" minorTickCount="2" prefHeight="23.0" prefWidth="171.0" showTickLabels="true" showTickMarks="true" value="100.0" />
+</children>
+</VBox>
+</children>
+</HBox>
+            <Button alignment="CENTER" layoutX="102.0" layoutY="15.0" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="70.0" text="Save">
+<graphic><ImageView fitHeight="20.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@images/save.png" />
+</image></ImageView>
+</graphic></Button>
+            <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#print" text="Print">
+<graphic><ImageView fitHeight="22.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@images/print.png" />
+</image></ImageView>
+</graphic></Button><Button fx:id="btnFirstPage" layoutX="193.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="44.0">
+<graphic><ImageView fitHeight="22.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@first.png" />
+</image></ImageView>
+</graphic></Button><Button fx:id="btnPreviousPage" layoutX="242.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="44.0">
+<graphic><ImageView fitHeight="22.0" fitWidth="42.0" layoutX="254.0" layoutY="21.5" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@previ.png" />
+</image></ImageView>
+</graphic></Button><Button fx:id="btnLastPage" layoutX="340.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="44.0">
+<graphic><ImageView fitHeight="22.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@last.png" />
+</image></ImageView>
+</graphic></Button><Button fx:id="btnNextPage" layoutX="291.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="44.0">
+<graphic><ImageView fitHeight="22.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@next.png" />
+</image></ImageView>
+</graphic></Button>
+</children>
+</AnchorPane>
+</children>
+</VBox>
+   </top>
+   <center>
+      <ScrollPane prefHeight="500.0" prefWidth="739.0" BorderPane.alignment="CENTER">
+         <content>
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </content>
+      </ScrollPane>
+   </center>
+   <right>
+   </right>
+    <bottom>
+            <Accordion fx:id="resultAccordion" BorderPane.alignment="CENTER">
+              <panes>
+                <TitledPane fx:id="resultPane" animated="false" text="untitled 1" visible="false">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="resultDescription" layoutX="14.0" layoutY="7.0" text="Label" wrapText="true" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+         </bottom>
+</BorderPane>

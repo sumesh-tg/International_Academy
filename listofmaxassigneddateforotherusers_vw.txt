@@ -1,0 +1,16 @@
+
+
+CREATE or REPLACE view 
+
+listofmaxassigneddateforotherusers_vw
+
+AS 
+
+select max(created_date) MaxCreatedDate, hs.enquiry_id
+from history_enquiry_assigning_tbl hs,
+                                enquiry_details dt
+where hs.enquiry_id = dt.enquiry_id
+  and hs.assigned_to <> dt.enquiry_assigning
+  and hs.assigned_to <> hs.assigned_by
+  and dt.completion_flag <> 1
+group by hs.enquiry_id 

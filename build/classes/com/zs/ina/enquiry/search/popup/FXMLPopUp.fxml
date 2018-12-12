@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-padding: 5;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.enquiry.search.popup.FXMLPopUpController">
+    <stylesheets>
+        <URL value="@fxmlpopup.css" />
+    </stylesheets>
+<children>
+<VBox style="-fx-border-color: blue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children><HBox prefHeight="32.0" prefWidth="600.0" style="-fx-background-color: #08468F; -fx-padding: 3;">
+<children><ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../../images/paper.png" />
+</image></ImageView><Label fx:id="contactNameLbl" prefHeight="28.0" prefWidth="475.0" textFill="#f2ecec">
+<font>
+<Font name="Arial Black" size="14.0" />
+</font></Label><Label fx:id="dateLbl" prefHeight="30.0" prefWidth="100.0" textFill="#f2ecec">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label>
+</children></HBox><GridPane layoutX="80.0" layoutY="37.0" style="-fx-background-insets: 0; -fx-border-radius: 0; -fx-padding: 3;" styleClass="gridEnquiryData" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+  <columnConstraints>
+    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="127.0" />
+    <ColumnConstraints hgrow="ALWAYS" maxWidth="455.0" minWidth="10.0" prefWidth="455.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="112.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><Label text="Contact Details">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label><Label fx:id="contactDetailsLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="Contact data" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label><VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+<children><ImageView fitHeight="52.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+</children></VBox>
+<VBox style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+<children>
+<ScrollPane prefViewportHeight="108.0" prefViewportWidth="438.0">
+<content><Label fx:id="programListLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="80.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font>
+<VBox.margin>
+<Insets />
+</VBox.margin></Label>
+</content>
+</ScrollPane>
+</children>
+<GridPane.margin>
+<Insets bottom="2.0" />
+</GridPane.margin>
+</VBox><Label text="Enquiry Source" GridPane.rowIndex="2">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label><VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+<children><Label fx:id="enquirySourceLbl" prefHeight="57.0" prefWidth="480.0">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label>
+</children>
+<GridPane.margin>
+<Insets bottom="2.0" />
+</GridPane.margin></VBox><Label text="Branch" GridPane.rowIndex="3">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label><VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+<children><Label fx:id="branchLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="441.0" style="-fx-border-color: black;">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label>
+</children>
+<GridPane.margin>
+<Insets bottom="2.0" />
+</GridPane.margin></VBox><Label text="Status" GridPane.rowIndex="4">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label><VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+<children><Label fx:id="statusLbl" prefHeight="66.0" prefWidth="449.0">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label>
+</children>
+<GridPane.margin>
+<Insets bottom="2.0" />
+</GridPane.margin></VBox><Label text="Remarks" GridPane.rowIndex="5">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label><VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+<children><Label fx:id="remarksLbl" prefHeight="49.0" prefWidth="440.0">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label>
+</children>
+<GridPane.margin>
+<Insets bottom="2.0" />
+</GridPane.margin></VBox><Label text="Program List" GridPane.rowIndex="1">
+<font>
+<Font name="Arial Black" size="12.0" />
+</font></Label>
+</children>
+</GridPane>
+</children>
+</VBox>
+</children>
+</AnchorPane>

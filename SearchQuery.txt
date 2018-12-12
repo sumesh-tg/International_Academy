@@ -1,0 +1,36 @@
+SELECT
+	ed.*, ea.enquiry_status AS cur_status,ea.comments as remarks,
+	ep.district AS location,asl.language_test_attend
+FROM
+	enquiry_details ed
+LEFT JOIN enquiry_assesment_status_tbl ea ON ea.enquiry_id = ed.enquiry_id
+LEFT JOIN enquiry_personal_details_tbl ep ON ep.enquiry_id = ed.enquiry_id
+LEFT JOIN (SELECT oq.enquiry_id,GROUP_CONCAT(teriary_quali_level,"-",teriary_quali_field,"-",university SEPARATOR ',\n') as qualification FROM enquiry_assessment_teritary_qualification oq  GROUP BY oq.enquiry_id)oqq ON oqq.enquiry_id=ed.enquiry_id 
+LEFT JOIN (SELECT ewe.enquiry_id,GROUP_CONCAT(profession SEPARATOR ' ,\n') as profession,GROUP_CONCAT(duration SEPARATOR ' ,\n') as duration FROM enquiry_assessment_work_exp_tbl ewe  GROUP BY ewe.enquiry_id)we ON we.enquiry_id=ed.enquiry_id
+LEFT JOIN (SELECT eas.enquiry_id,GROUP_CONCAT(program_level SEPARATOR ' ,\n') as program_level,GROUP_CONCAT(program_field SEPARATOR ' ,\n') as program_field,GROUP_CONCAT(intake SEPARATOR ' ,\n') as intake,GROUP_CONCAT(institution SEPARATOR ' ,\n') as institution,GROUP_CONCAT(country SEPARATOR ' ,\n') as country_prgm,GROUP_CONCAT(location SEPARATOR ' ,\n') as location FROM enquiry_assessment_study_tbl eas GROUP BY eas.enquiry_id )es ON es.enquiry_id=ed.enquiry_id 
+LEFT JOIN (SELECT asl.enquiry_id,GROUP_CONCAT(test SEPARATOR ' ,\n') as language_test_attend,GROUP_CONCAT(overall SEPARATOR ' ,\n') as overall FROM enquiry_assesment_languagetest_tbl1 asl GROUP BY asl.enquiry_id)asl  ON asl.enquiry_id=ed.enquiry_id
+WHERE	(ed.edate BETWEEN ''''AND '2015-12-17') 
+         AND ed.contact_name LIKE '%'	AND (ed.contact_number LIKE '%' OR ed.contact_number2 LIKE '%' ) 
+         AND (ed.study_details like '%' OR ed.study_details like '%')
+         AND ed.enquiry_assigning LIKE '%'
+         AND ed.enquiry_method LIKE '%'
+	       AND ed.enquiry_source LIKE '%' 
+         AND ed.branch LIKE '%' 
+         AND ed.district LIKE '%' 
+         AND ed.state LIKE 'Kerala%' 
+         AND ed.country LIKE 'India%' 
+         AND asl.language_test_attend Like '%' 
+         AND asl.overall LIKE '%'
+         AND we.profession LIKE '%'
+         AND we.duration LIKE '%'
+
+
+         AND es.country_prgm LIKE '%'
+         AND es.institution LIKE '%'
+         AND es.intake LIKE '%'
+         AND es.location LIKE '%'
+         AND es.program_field LIKE '%'
+         AND es.program_level LIKE '%'
+         AND ed.enquiry_assigning=  'a' 
+
+

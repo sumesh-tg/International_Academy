@@ -1,0 +1,4 @@
+.tooltip {    
+    -fx-background-color:  linear-gradient(to bottom, #fefcea 0%,#f1da36 100%);
+    -fx-text-fill: black;
+}

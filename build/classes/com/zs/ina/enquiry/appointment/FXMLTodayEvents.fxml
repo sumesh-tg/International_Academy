@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="279.0" prefWidth="225.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.enquiry.appointment.FXMLTodayEventsController">
+    <stylesheets>
+        <URL value="@fxmltodayevents.css" />
+    </stylesheets>
+<children><ListView fx:id="listViewTodayEvents" layoutX="2.0" prefHeight="273.0" prefWidth="222.0" />
+</children>
+</AnchorPane>

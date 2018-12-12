@@ -1,0 +1,16 @@
+CREATE or REPLACE view EMPLOYEE_ROLE_BRANCH  as
+SELECT CONCAT(ld.first_name," ",ld.last_name,"(",
+case when r.role ='ROLE_OFFICE' THEN 'Front Office Staff' 
+     when r.role ='ROLE_ADMIN' THEN 'Administrator' 
+     when r.role ='ROLE_COUNSELOR' THEN 'Counselor' 
+ELSE r.role END
+,",",b.branch_name,")")  as enquiry_assigned_by, l.user_name AS USER_NAME
+,b.branch_name as branch,r.role,CONCAT(ld.first_name," ",ld.last_name)as fullname
+FROM   login_details_tbl ld
+LEFT JOIN login_tbl l ON (ld.login_id = l.login_id)
+LEFT JOIN role_tbl r ON (r.role_id = l.role_id)
+LEFT JOIN login_auditor la ON (la.user_id = ld.login_id)
+LEFT JOIN branch_tbl b ON (ld.branch_id = b.branch_id)
+WHERE ld.branch_id = b.branch_id;
+
+

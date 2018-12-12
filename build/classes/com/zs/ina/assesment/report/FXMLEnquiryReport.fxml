@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="759.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.assesment.report.FXMLEnquiryReportController">
+    <stylesheets>
+        <URL value="@fxmlenquiryreport.css" />
+    </stylesheets>
+    <children>
+        <Pane fx:id="reportPane" layoutX="5.0" layoutY="8.0" prefHeight="494.0" prefWidth="744.0">
+            <children>
+                <BarChart fx:id="reportBarChart" layoutX="7.0" layoutY="139.0" prefHeight="340.0" prefWidth="737.0">
+                    <xAxis>
+                        <CategoryAxis fx:id="catAxis" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis fx:id="numAxis" side="LEFT" />
+                    </yAxis>
+                </BarChart>
+                <RadioButton fx:id="todayRadioBtn" layoutX="14.0439453125" layoutY="28.5" mnemonicParsing="false" onMouseClicked="#handleTodayRadioBtn" selected="true" text="Today">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="radioCounselorGroup" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="weekRadioBtn" layoutX="75.5439453125" layoutY="28.5" mnemonicParsing="false" onMouseClicked="#handleWeekRadioBtn" text="This Week" toggleGroup="$radioCounselorGroup" />
+                <RadioButton fx:id="monthRadioBtn" layoutX="164.5439453125" layoutY="28.5" mnemonicParsing="false" onMouseClicked="#handleMonthRadioBtn" text="This Month" toggleGroup="$radioCounselorGroup" />
+                <ComboBox fx:id="branchCmb" layoutX="14.0" layoutY="74.0" onAction="#handleBranchCmb" prefHeight="25.0" prefWidth="194.0" />
+                <ComboBox fx:id="counselorCmb" layoutX="226.0" layoutY="74.0" onAction="#handlecounselorCmb" prefHeight="25.0" prefWidth="194.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

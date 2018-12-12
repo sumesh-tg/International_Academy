@@ -1,0 +1,33 @@
+
+.table-view .column-header{
+    -fx-background-color: grey;
+}
+.table-view .column-header .label {
+    -fx-text-fill : black;
+    -fx-font-weight : bold;
+    -fx-font-size : 1.5em;
+}
+.table-column{
+    -fx-alignment: CENTER;
+    -fx-border-color: grey;
+}
+.pr_title{
+    -fx-font-size:0.9em;
+    -fx-font-weight:bold;
+}
+.pr_data{
+    -fx-font-size:0.9em;
+}
+.gridProgramRequired .label{
+       -fx-font-size:1.5em;
+}
+.gridProgramRequired .pr_title{
+            -fx-font-size:1.5em;
+    -fx-font-weight:bold;
+}
+.gridStyle{
+    -fx-background-radius: 2.0;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-hgap: 5;
+    -fx-vgap: 5;
+}

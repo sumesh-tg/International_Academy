@@ -1,0 +1,14 @@
+
+
+CREATE or REPLACE view 
+
+minassigndate_current_user_vw
+
+AS 
+SELECT curr.enquiry_id, curr.assigned_to, min(assigned_date) MinAssignedDate
+  from ListOfMaxAssignedDateForOtherUsers_VW others RIGHT OUTER JOIN
+     ListOfAssignedDateForCurrentUser_VW curr
+ON others.enquiry_id = curr.enquiry_id
+where curr.created_date > others.MaxCreatedDate
+-- where curr.enquiry_id = 'koc_228d6705c090'
+group by curr.enquiry_id, curr.assigned_to 

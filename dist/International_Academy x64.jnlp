@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="International_Academy x64.jnlp">
+  <information>
+    <title>International_Academy x64</title>
+    <vendor>International_Academy</vendor>
+    <description>kakkanad kochi</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="International_Academy.jar" size="8667407" download="eager" />
+    <jar href="lib\Notifier.jar" size="43956" download="eager" />
+    <jar href="lib\activation.jar" size="55147" download="eager" />
+    <jar href="lib\apache-logging-log4j.jar" size="481534" download="eager" />
+    <jar href="lib\bonecp-0.8.0.RELEASE.jar" size="110600" download="eager" />
+    <jar href="lib\com.springsource.net.sf.cglib-2.2.0.jar" size="326877" download="eager" />
+    <jar href="lib\common-lang3.jar" size="646680" download="eager" />
+    <jar href="lib\commons-beanutils-1.9.0.jar" size="230951" download="eager" />
+    <jar href="lib\commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="lib\commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-lang-2.6.jar" size="284220" download="eager" />
+    <jar href="lib\commons-logging-api-1.1.1.jar" size="52313" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="lib\controlsfx-samples-8.40.12.jar" size="665038" download="eager" />
+    <jar href="lib\dbpool-5.1.jar" size="102550" download="eager" />
+    <jar href="lib\dom4j-1.6.jar" size="313359" download="eager" />
+    <jar href="lib\fontawesomefx-8.1.jar" size="179086" download="eager" />
+    <jar href="lib\itext-2.1.7.js2.jar" size="1130575" download="eager" />
+    <jar href="lib\jackson-annotations-2.1.4.jar" size="34476" download="eager" />
+    <jar href="lib\jackson-core-2.1.4.jar" size="206866" download="eager" />
+    <jar href="lib\jackson-databind-2.1.4.jar" size="926562" download="eager" />
+    <jar href="lib\jasperreports-6.1.0.jar" size="5201360" download="eager" />
+    <jar href="lib\java-mail-1.4.4.jar" size="494975" download="eager" />
+    <jar href="lib\jcommon-1.0.15.jar" size="309294" download="eager" />
+    <jar href="lib\jfoenix-1.0.0.jar" size="2176164" download="eager" />
+    <jar href="lib\jfreechart-1.0.12.jar" size="1368681" download="eager" />
+    <jar href="lib\jfxtras-agenda-8.0-r5-20160421.080102-257.jar" size="220176" download="eager" />
+    <jar href="lib\jfxtras-labs-samples-8.0-r5-SNAPSHOT-shadow.jar" size="2910793" download="eager" />
+    <jar href="lib\jidefx-common-0.9.1-javadoc.jar" size="463743" download="eager" />
+    <jar href="lib\jidefx-common-0.9.1.jar" size="276164" download="eager" />
+    <jar href="lib\jidefx-comparators-0.9.1.jar" size="18178" download="eager" />
+    <jar href="lib\jidefx-converters-0.9.1.jar" size="76422" download="eager" />
+    <jar href="lib\jidefx-decoration-0.9.1.jar" size="57425" download="eager" />
+    <jar href="lib\jidefx-fields-0.9.1-javadoc.jar" size="594486" download="eager" />
+    <jar href="lib\jidefx-fields-0.9.1.jar" size="343926" download="eager" />
+    <jar href="lib\jidefx-validation-0.9.1.jar" size="20861" download="eager" />
+    <jar href="lib\json-simple.jar" size="17628" download="eager" />
+    <jar href="lib\log4j.jar" size="367444" download="eager" />
+    <jar href="lib\mail.jar" size="440508" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.11-bin.jar" size="732657" download="eager" />
+    <jar href="lib\openjfx-dialogs-1.0.2.jar" size="148557" download="eager" />
+    <jar href="lib\poi-3.10-FINAL.jar" size="1950905" download="eager" />
+    <jar href="lib\poi-3.5-FINAL-sources.jar" size="1471192" download="eager" />
+    <jar href="lib\poi-3.7.jar" size="1675036" download="eager" />
+    <jar href="lib\poi-ooxml-3.5-beta5.jar" size="340569" download="eager" />
+    <jar href="lib\poi-ooxml-3.7-20101029.jar" size="498259" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.9.jar" size="4802621" download="eager" />
+    <jar href="lib\spring-aop-4.3.1.RELEASE.jar" size="379791" download="eager" />
+    <jar href="lib\spring-aspects-4.3.1.RELEASE.jar" size="58670" download="eager" />
+    <jar href="lib\spring-beans-4.3.1.RELEASE.jar" size="754397" download="eager" />
+    <jar href="lib\spring-boot-1.3.6.RELEASE.jar" size="549194" download="eager" />
+    <jar href="lib\spring-boot-autoconfigure-1.3.6.RELEASE.jar" size="759272" download="eager" />
+    <jar href="lib\spring-boot-starter-logging-1.3.6.RELEASE.jar" size="2255" download="eager" />
+    <jar href="lib\spring-boot-starter-web-1.3.6.RELEASE.jar" size="2229" download="eager" />
+    <jar href="lib\spring-context-4.3.1.RELEASE.jar" size="1132904" download="eager" />
+    <jar href="lib\spring-context-support-4.3.1.RELEASE.jar" size="187163" download="eager" />
+    <jar href="lib\spring-core-4.3.1.RELEASE.jar" size="1109894" download="eager" />
+    <jar href="lib\spring-expression-4.3.1.RELEASE.jar" size="263712" download="eager" />
+    <jar href="lib\spring-instrument-4.3.1.RELEASE.jar" size="7244" download="eager" />
+    <jar href="lib\spring-instrument-tomcat-4.3.1.RELEASE-javadoc.jar" size="40041" download="eager" />
+    <jar href="lib\spring-instrument-tomcat-4.3.1.RELEASE-sources.jar" size="6449" download="eager" />
+    <jar href="lib\spring-instrument-tomcat-4.3.1.RELEASE.jar" size="10564" download="eager" />
+    <jar href="lib\spring-jdbc-4.3.1.RELEASE.jar" size="426228" download="eager" />
+    <jar href="lib\spring-jms-4.3.1.RELEASE.jar" size="289251" download="eager" />
+    <jar href="lib\spring-messaging-4.3.1.RELEASE.jar" size="381324" download="eager" />
+    <jar href="lib\spring-orm-4.3.1.RELEASE.jar" size="475175" download="eager" />
+    <jar href="lib\spring-oxm-4.3.1.RELEASE.jar" size="85309" download="eager" />
+    <jar href="lib\spring-test-4.3.1.RELEASE.jar" size="591420" download="eager" />
+    <jar href="lib\spring-tx-4.3.1.RELEASE.jar" size="266994" download="eager" />
+    <jar href="lib\spring-web-4.3.1.RELEASE.jar" size="810635" download="eager" />
+    <jar href="lib\spring-webmvc-4.3.1.RELEASE.jar" size="913866" download="eager" />
+    <jar href="lib\spring-webmvc-portlet-4.3.1.RELEASE.jar" size="176852" download="eager" />
+    <jar href="lib\spring-websocket-4.3.1.RELEASE.jar" size="448259" download="eager" />
+    <jar href="lib\xmlbeans-2.3.0.jar" size="2666695" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.zs.ina.login.INALoginForm"  name="International_Academy x64" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,5 @@
+2016-06-17 15:59:27 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-17 15:59:27 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-17 15:59:28 ERROR [com.zs.ina.common.InboxListMaker] [branch=Kollam] [user=jins] java.sql.SQLException: Column 'completion_flag' not found.
+2016-06-17 16:01:38 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-17 16:01:38 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 

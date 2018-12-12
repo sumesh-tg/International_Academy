@@ -1,0 +1,85 @@
+2016-06-21 15:37:00 INFO  [zs.com.ina.db.mysql.pool.DBPool] [branch=] [user=] Error While Creating Connection :=> java.sql.SQLException: null,  message from server: "Host 'User04-PC' is not allowed to connect to this MySQL server"
+2016-06-21 15:37:00 INFO  [zs.com.ina.db.mysql.pool.DBPool] [branch=] [user=] Error While Creating Connection :=> java.sql.SQLException: null,  message from server: "Host 'User04-PC' is not allowed to connect to this MySQL server"
+2016-06-21 15:40:02 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 15:40:03 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 15:49:55 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 15:49:55 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 16:02:40 ERROR [com.zs.ina.admin.master.retrieve.RetrieveStaticMasterDAO] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'test.mastertbl_thread_delay' doesn't exist
+2016-06-21 16:02:41 ERROR [com.zs.ina.admin.master.retrieve.RetrieveStaticMasterDAO] [branch=Kollam] [user=arun] [Ljava.lang.StackTraceElement;@75f4e27f
+2016-06-21 16:02:47 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:02:51 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:02:56 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:00 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:05 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:10 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:15 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:20 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:25 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:30 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:35 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:40 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:45 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:50 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:03:55 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:00 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:05 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:10 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:15 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:20 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:25 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:30 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:35 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:40 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:45 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:50 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:04:55 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:00 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:05 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:10 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:15 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:20 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:25 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:30 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:35 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'rt.participant_id' in 'where clause'
+2016-06-21 16:05:40 ERROR [com.zs.ina.enquiry.appointment.reminder.dao.ReminderIMPL] [branch=Kollam] [user=arun] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'test.reminder_tbl' doesn't exist
+2016-06-21 16:05:53 ERROR [com.zs.ina.admin.master.retrieve.RetrieveStaticMasterDAO] [branch=Kollam] [user=arun] [Ljava.lang.StackTraceElement;@33e20df4
+2016-06-21 17:19:28 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:19:28 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:21:14 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:21:14 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:22:57 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:22:57 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:28:50 INFO  [com.zs.ina.assesment.dao.ProgramSuggestedRequiredDAO] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'skill_area' in 'field list'
+2016-06-21 17:46:47 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:46:47 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:56:07 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:56:07 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:56:11 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'task_follow_id =assessment_substatus) as substatus FROM task_details where task_' at line 1
+2016-06-21 17:56:14 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'task_follow_id =assessment_substatus) as substatus FROM task_details where task_' at line 1
+2016-06-21 17:56:19 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'task_follow_id =assessment_substatus) as substatus FROM task_details where task_' at line 1
+2016-06-21 17:58:11 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:58:11 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 17:58:15 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'created_user' in 'where clause'
+2016-06-21 17:58:18 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'created_user' in 'where clause'
+2016-06-21 18:00:17 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:00:17 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:00:21 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'created_user' in 'where clause'
+2016-06-21 18:00:24 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'created_user' in 'where clause'
+2016-06-21 18:06:06 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:06:06 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:06:10 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'task_details where task_id='task_0a39de72f7e2' order by updated_date asc' at line 1
+2016-06-21 18:06:13 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'task_details where task_id='task_0a39de72f7e2' order by updated_date asc' at line 1
+2016-06-21 18:08:10 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:08:10 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:13:14 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:13:14 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:15:22 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:15:22 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:20:52 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:20:52 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:20:57 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] java.sql.SQLException: Column '#5F7523' not found.
+2016-06-21 18:21:00 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] java.sql.SQLException: Column '#195214' not found.
+2016-06-21 18:21:02 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] java.sql.SQLException: Column '#990000' not found.
+2016-06-21 18:21:04 INFO  [com.zs.ina.task.dao.TasksIMPL] [branch=Kollam] [user=jins] java.sql.SQLException: Column '#943625' not found.
+2016-06-21 18:22:54 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 
+2016-06-21 18:22:54 ERROR [com.zs.ina.enquiry.EnquiryMainViewController] [branch=Kollam] [user=jins] 

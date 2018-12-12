@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="1028.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.agency.FXMLAgencyController">
+    <stylesheets>
+        <URL value="@fxmlagency.css" />
+    </stylesheets>
+<children><GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="399.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="602.0" minWidth="10.0" prefWidth="602.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children>
+<VBox fx:id="vboxSearchAndTable" layoutX="12.0" layoutY="14.0" prefHeight="449.0" prefWidth="630.0" style="-fx-border-color: #08468F;" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+<children>
+<HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="14.0" prefHeight="33.0" spacing="10.0" style="-fx-background-color: #08468F; -fx-spacing: 50;">
+<children><TextField fx:id="searchTxt" layoutX="12.0" layoutY="14.0" prefHeight="25.0" prefWidth="477.0">
+<HBox.margin>
+<Insets left="5.0" />
+</HBox.margin></TextField><ImageView fitHeight="25.0" fitWidth="51.0" layoutX="324.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../admin/master/images/tabicon_search.png" />
+</image></ImageView>
+</children>
+</HBox><TableView fx:id="agencyTable" layoutX="13.0" layoutY="59.0" onKeyReleased="#agencytableOnKeyReleased" onMouseClicked="#agencytableOnMouseClicked" prefHeight="404.0" prefWidth="589.0" VBox.vgrow="ALWAYS">
+  <columns>
+    <TableColumn fx:id="firstNameColumn" prefWidth="159.0" text="First Name" /><TableColumn fx:id="lastNameClmn" prefWidth="165.0" text="Last Name" /><TableColumn fx:id="branchColumn" prefWidth="146.0" text="Branch" /><TableColumn fx:id="phoneColumn" prefWidth="117.0" text="Phone Number" />
+  </columns>
+<VBox.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</VBox.margin>
+</TableView>
+</children>
+<GridPane.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</GridPane.margin>
+</VBox>
+<VBox layoutX="14.0" layoutY="9.0" prefHeight="414.0" prefWidth="491.0" spacing="10.0" style="-fx-border-color: #08468F;" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+<children>
+<HBox alignment="CENTER" prefHeight="33.0" style="-fx-background-color: #08468F;">
+<children><Label text="Agency" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font></Label>
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="25.0048828125" layoutY="74.0" spacing="30.0">
+<children><Label layoutX="25.0048828125" layoutY="77.5" prefWidth="71.0" styleClass="fontlbl" text="  First Name" /><TextField fx:id="firstNameTxt" layoutX="173.0" layoutY="74.0" prefHeight="25.0" prefWidth="218.0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="25.009765625" layoutY="114.0" spacing="30.0">
+<children><Label layoutX="25.009765625" layoutY="117.5" prefWidth="71.0" styleClass="fontlbl" text="  Last Name" /><TextField fx:id="lastNameTxt" layoutX="173.0" layoutY="114.0" prefHeight="25.0" prefWidth="218.0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="25.009765625" layoutY="148.0" spacing="30.0">
+<children><Label layoutX="25.009765625" layoutY="154.5" prefWidth="71.0" styleClass="fontlbl" text="  Branch" /><ComboBox fx:id="branchCmb" layoutX="173.0" layoutY="151.0" prefHeight="25.0" prefWidth="218.0" styleClass="gradient1" />
+</children>
+</HBox>
+<HBox alignment="CENTER" style="-fx-spacing: 40;">
+<children><Label alignment="CENTER" styleClass="fontlbl" text="  Username" /><TextField fx:id="userNameTxt" prefHeight="25.0" prefWidth="218.0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="25.009765625" layoutY="190.0" spacing="30.0">
+<children><Label layoutX="25.009765625" layoutY="193.5" prefWidth="71.0" styleClass="fontlbl" text="  Email" /><TextField fx:id="emailTxt" layoutX="173.0" layoutY="190.0" prefHeight="25.0" prefWidth="218.0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="26.0" layoutY="228.0" spacing="30.0">
+<children><Label layoutX="26.0" layoutY="232.0" prefWidth="71.0" styleClass="fontlbl" text="  Phone" /><TextField fx:id="phoneTxt" layoutX="173.0" layoutY="228.0" prefHeight="25.0" prefWidth="218.0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="25.15625" layoutY="272.0" spacing="30.0">
+<children><Label layoutX="25.1767578125" layoutY="274.5" prefWidth="71.0" styleClass="fontlbl" text="  Address" /><TextArea fx:id="addressTxtArea" layoutX="173.0" layoutY="275.0" prefHeight="99.0" prefWidth="218.0" styleClass="gradient1" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="171.0" layoutY="384.0" spacing="10.0" style="-fx-spacing: 12; -fx-padding: 25;">
+<children><Button fx:id="saveBtn" layoutX="324.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="25.0" prefWidth="65.0" styleClass="button-submit" text="Save" /><Button fx:id="deleteBtn" layoutX="250.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleDeleteBtn" prefHeight="25.0" prefWidth="65.0" styleClass="button-submit" text="Delete" /><Button fx:id="cancelBtn" layoutX="175.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleCancelBtn" prefHeight="25.0" prefWidth="65.0" styleClass="button-submit" text="Clear" /><Button fx:id="btnClose" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" styleClass="button-submit" text="Close" />
+</children>
+<VBox.margin>
+<Insets right="5.0" />
+</VBox.margin>
+</HBox>
+</children>
+<GridPane.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</GridPane.margin>
+</VBox>
+</children>
+</GridPane>
+</children>
+</AnchorPane>

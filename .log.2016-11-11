@@ -1,0 +1,15 @@
+2016-11-11 14:16:31 ERROR [com.zs.ina.search.home.FXMLSearchHomeController$31] [branch=Kollam] [user=Administrator] javafx.fxml.LoadException: 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run1271680792/International_Academy.jar!/com/zs/ina/search/employer/FXMLEmployer.fxml
+
+2016-11-11 14:52:51 INFO  [com.zs.ina.accounts.FXMLAccountsInboxController$1$4] [branch=Kochi] [user=s] 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run77269223/International_Academy.jar!/com/zs/ina/accounts/invoice/history/FXMLInvoiceHistory.fxml
+
+2016-11-11 16:01:37 INFO  [com.zs.ina.accounts.FXMLAccountsInboxController$1$4] [branch=Kochi] [user=s] 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run986423955/International_Academy.jar!/com/zs/ina/accounts/invoice/history/FXMLInvoiceHistory.fxml
+
+2016-11-11 16:01:38 INFO  [com.zs.ina.accounts.FXMLAccountsInboxController$1$4] [branch=Kochi] [user=s] 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run986423955/International_Academy.jar!/com/zs/ina/accounts/invoice/history/FXMLInvoiceHistory.fxml
+
+2016-11-11 16:04:01 INFO  [com.zs.ina.accounts.FXMLAccountsInboxController$1$4] [branch=Kochi] [user=s] 
+file:/D:/SUMESH/CURRENT_IA/MODULE2/International_Academy/dist/run948143542/International_Academy.jar!/com/zs/ina/accounts/invoice/history/FXMLInvoiceHistory.fxml
+

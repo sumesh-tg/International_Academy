@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.button-submit{
+    -fx-background-color: 
+        linear-gradient(#104E8B	, #003F87),
+        linear-gradient(#26466D, #3A5894),
+        linear-gradient(#1B3F8B, #4169E1),
+        linear-gradient(#162252 0%, #283A90 50%, #283A90 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 15;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #F5F5F5;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    /*    -fx-padding: 6 15 6 15;*/
+}

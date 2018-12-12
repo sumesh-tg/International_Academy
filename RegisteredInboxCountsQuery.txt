@@ -1,0 +1,73 @@
+SELECT
+	CONCAT((SELECT COUNT(ed.enquiry_id) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a' AND ed.completion_flag=1) 
+        ,',',(SELECT COUNT(ed.enquiry_id) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a' AND ed.completion_flag=1 AND ed.study <> '') 
+        ,',',(SELECT COUNT(ed.enquiry_id) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a' AND ed.completion_flag=1 AND ed.work <> '') 
+        ,',',(SELECT COUNT(ed.enquiry_id) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a' AND ed.completion_flag=1 AND ed.migration <> '') 
+        ,',',(SELECT COUNT(ed.enquiry_id) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a' AND ed.completion_flag=1 AND ed.training <> '') 
+  )AS TotalRegisterd,
+	CONCAT((SELECT count(*) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a'
+                 AND ed.completion_flag=1 AND ed.proposed_training_date >= CURDATE())
+          ,',', (	SELECT count(*) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a'
+                 AND ed.completion_flag=1 AND ed.proposed_training_date >= CURDATE()  AND ed.study <> '')
+          ,',',(SELECT count(*) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a'
+                 AND ed.completion_flag=1 AND ed.proposed_training_date >= CURDATE()  AND ed.work <> '')
+           ,',',(SELECT count(*) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a'
+                 AND ed.completion_flag=1 AND ed.proposed_training_date >= CURDATE()  AND ed.migration <> '')
+            ,',',(SELECT count(*) FROM 	enquiry_details ed WHERE ed.enquiry_assigning = 'a'
+                 AND ed.completion_flag=1 AND ed.proposed_training_date >= CURDATE()  AND ed.training <> '')
+ )AS registeredfollowup,
+	CONCAT((	SELECT COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed
+           LEFT JOIN enquiry_assesment_status_tbl ea ON ea.enquiry_id = ed.enquiry_id
+           LEFT JOIN user_message_tbl um ON um.enquiry_id=ed.enquiry_id
+           WHERE ed.enquiry_assigning ='a' AND ed.completion_flag=1 AND (um.readflag=0 AND um.enquiry_id=ea.enquiry_id)) 
+          ,',',(	SELECT COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed
+           LEFT JOIN enquiry_assesment_status_tbl ea ON ea.enquiry_id = ed.enquiry_id
+           LEFT JOIN user_message_tbl um ON um.enquiry_id=ed.enquiry_id
+           WHERE ed.enquiry_assigning ='a' AND ed.study <> '' AND ed.completion_flag=1 AND (um.readflag=0 AND um.enquiry_id=ea.enquiry_id))
+            ,',',(	SELECT COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed
+           LEFT JOIN enquiry_assesment_status_tbl ea ON ea.enquiry_id = ed.enquiry_id
+           LEFT JOIN user_message_tbl um ON um.enquiry_id=ed.enquiry_id
+           WHERE ed.enquiry_assigning ='a' AND ed.work <> '' AND ed.completion_flag=1 AND (um.readflag=0 AND um.enquiry_id=ea.enquiry_id))
+            ,',',(	SELECT COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed
+           LEFT JOIN enquiry_assesment_status_tbl ea ON ea.enquiry_id = ed.enquiry_id
+           LEFT JOIN user_message_tbl um ON um.enquiry_id=ed.enquiry_id
+           WHERE ed.enquiry_assigning ='a' AND ed.migration <> '' AND ed.completion_flag=1 AND (um.readflag=0 AND um.enquiry_id=ea.enquiry_id))
+            ,',',(	SELECT COUNT(DISTINCT ed.enquiry_id) FROM enquiry_details ed
+           LEFT JOIN enquiry_assesment_status_tbl ea ON ea.enquiry_id = ed.enquiry_id
+           LEFT JOIN user_message_tbl um ON um.enquiry_id=ed.enquiry_id
+           WHERE ed.enquiry_assigning ='a' AND ed.training <> '' AND ed.completion_flag=1 AND (um.readflag=0 AND um.enquiry_id=ea.enquiry_id))
+)AS registeredmessage,
+	CONCAT((SELECT COUNT(*)	FROM enquiry_details ed,enquiry_assesment_status_tbl es	WHERE		ed.rating = 1
+   	AND ed.enquiry_assigning = 'a' AND completion_flag = 1 AND ed.enquiry_id = es.enquiry_id)
+     ,',',(SELECT COUNT(*)	FROM enquiry_details ed,enquiry_assesment_status_tbl es	WHERE		ed.rating = 1
+   	AND ed.enquiry_assigning = 'a' AND completion_flag = 1 AND ed.enquiry_id = es.enquiry_id AND ed.study <> '')
+     ,',',(SELECT COUNT(*)	FROM enquiry_details ed,enquiry_assesment_status_tbl es	WHERE		ed.rating = 1
+   	AND ed.enquiry_assigning = 'a' AND completion_flag = 1 AND ed.enquiry_id = es.enquiry_id AND ed.work <> '')
+     ,',',(SELECT COUNT(*)	FROM enquiry_details ed,enquiry_assesment_status_tbl es	WHERE		ed.rating = 1
+   	AND ed.enquiry_assigning = 'a' AND completion_flag = 1 AND ed.enquiry_id = es.enquiry_id AND ed.migration <> '')
+     ,',',(SELECT COUNT(*)	FROM enquiry_details ed,enquiry_assesment_status_tbl es	WHERE		ed.rating = 1
+   	AND ed.enquiry_assigning = 'a' AND completion_flag = 1 AND ed.enquiry_id = es.enquiry_id AND ed.training <> '')
+	) AS regstarred,
+	CONCAT((SELECT COUNT(*) FROM enquiry_details ed WHERE ed.important_flag = 1
+         AND ed.enquiry_assigning = 'a' AND ed.completion_flag = 1)
+         ,',',(SELECT COUNT(*) FROM enquiry_details ed WHERE ed.important_flag = 1
+         AND ed.enquiry_assigning = 'a' AND ed.completion_flag = 1 AND ed.study <> '')
+          ,',',(SELECT COUNT(*) FROM enquiry_details ed WHERE ed.important_flag = 1
+         AND ed.enquiry_assigning = 'a' AND ed.completion_flag = 1 AND ed.work <> '')
+          ,',',(SELECT COUNT(*) FROM enquiry_details ed WHERE ed.important_flag = 1
+         AND ed.enquiry_assigning = 'a' AND ed.completion_flag = 1 AND ed.migration <> '')
+          ,',',(SELECT COUNT(*) FROM enquiry_details ed WHERE ed.important_flag = 1
+         AND ed.enquiry_assigning = 'a' AND ed.completion_flag = 1 AND ed.training <> '')
+
+ )AS regimportant,  
+        CONCAT((SELECT count(*) FROM enquiry_assesment_status_tbl es,enquiry_details ed where date>=CURDATE()
+         AND counsellor='a' AND ed.completion_flag=1  AND (es.enquiry_id=ed.enquiry_id))
+         ,',', (SELECT count(*) FROM enquiry_assesment_status_tbl es,enquiry_details ed where date>=CURDATE()
+         AND counsellor='a' AND ed.completion_flag=1  AND (es.enquiry_id=ed.enquiry_id) AND ed.study <> '')
+           ,',', (SELECT count(*) FROM enquiry_assesment_status_tbl es,enquiry_details ed where date>=CURDATE()
+         AND counsellor='a' AND ed.completion_flag=1  AND (es.enquiry_id=ed.enquiry_id) AND ed.work <> '')
+           ,',', (SELECT count(*) FROM enquiry_assesment_status_tbl es,enquiry_details ed where date>=CURDATE()
+         AND counsellor='a' AND ed.completion_flag=1  AND (es.enquiry_id=ed.enquiry_id) AND ed.migration <> '')
+           ,',', (SELECT count(*) FROM enquiry_assesment_status_tbl es,enquiry_details ed where date>=CURDATE()
+         AND counsellor='a' AND ed.completion_flag=1  AND (es.enquiry_id=ed.enquiry_id) AND ed.training <> '')
+ )AS appoinment

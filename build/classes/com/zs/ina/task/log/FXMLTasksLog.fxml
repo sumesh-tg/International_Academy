@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="603.0" prefWidth="429.0" style="-fx-padding: 3;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.task.log.FXMLTasksLogController">
+    <stylesheets>
+        <URL value="@fxmltaskslog.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lblTaskName" layoutX="12.0" layoutY="29.0" maxHeight="1.7976931348623157E308" prefWidth="247.0" text="Task Name     :" />
+      <Label fx:id="lblTaskNo" layoutX="12.0" layoutY="47.0" text="Ticket No       :" />
+      <Label fx:id="lblTaskCreatedDate" layoutX="11.0" layoutY="65.0" text="Created Date :" />
+      <ComboBox fx:id="cmbTaskStatus" layoutX="272.0" layoutY="30.0" prefHeight="25.0" prefWidth="148.0" promptText="Change Task Status" />
+      <Label fx:id="lblTaskCreatedBy" layoutX="11.0" layoutY="82.0" text="Created By     :" />
+      <VBox layoutX="10.0" layoutY="114.0" prefHeight="484.0" prefWidth="408.0" style="-fx-spacing: 5;">
+         <children>
+            <VBox VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lblTaskDescription" maxHeight="1.7976931348623157E308" prefWidth="408.0" text="Description    :" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" style="-fx-spacing: 5;" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="txtSearch" prefHeight="25.0" prefWidth="408.0" promptText="Search here..." styleClass="searchIcon" />
+                  <ListView fx:id="listViewLog" prefHeight="336.0" prefWidth="408.0" />
+                  <TextField fx:id="txtRemarks" prefHeight="25.0" prefWidth="408.0" promptText="Add your remark here..." />
+                  <Button fx:id="btnAddRemark" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" styleClass="btnsubmit" text="Add Remark" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="23.0" style="-fx-background-color: #104fa2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Log" textFill="#fcfcfc" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="imgViewClose" fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/delete.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Label fx:id="lblEnquiryInfo" layoutX="11.0" layoutY="99.0" text="Created By     :" textFill="#b22121" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+.gridItems .label{
+     -fx-text-fill: #42426F;
+    -fx-font-size:16;
+    -fx-font-weight: bold;
+    
+}
+.gridItems {
+    -fx-vgap:2;
+    -fx-hgap:2;
+}
+.other-labels{
+   -fx-font-size:16; 
+}
+.plus-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../../images/plus_dy.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 16 16;
+    -fx-padding: 3 15 3 15;
+}
+.plus-button:focused{
+
+    -fx-border-color:green;
+    -fx-effect: dropshadow( gaussian , rgba(63,181,142,1) , 20,0,0,0 ); 
+    -fx-border-radius: 3;
+
+}
+.close-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../../images/close_dy.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 16 16;
+    -fx-padding: 3 15 3 15;
+}
+.close-button:focused{
+
+    -fx-border-color:green;
+    -fx-effect: dropshadow( gaussian , rgba(63,181,142,1) , 20,0,0,0 ); 
+    -fx-border-radius: 3;
+
+}

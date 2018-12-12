@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.enquiry.search.editing.FXMLContactNumbersController">
+    <stylesheets>
+        <URL value="@fxmlcontactnumbers.css" />
+    </stylesheets>
+<children>
+<VBox layoutX="2.0" layoutY="5.0" style="-fx-padding: 3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children><Label alignment="CENTER" contentDisplay="CENTER" layoutY="61.0" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="356.0" style="-fx-background-color: #08468F;" styleClass="lblStudyTitle" textFill="#f5f0f0">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+<graphic>
+<Text fill="#eee9e9" layoutX="120.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View / Add Contact Numbers" wrappingWidth="213.13671875">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+</Text>
+</graphic>
+</Label><GridPane fx:id="gridContactNumber" layoutX="157.0" layoutY="80.0" style="-fx-vgap: 5; -fx-hgap: 5;" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" VBox.vgrow="ALWAYS">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+<ColumnConstraints minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><TextField fx:id="txtStdIsd" promptText="STD/ISD" /><TextField fx:id="txtContactNumber" maxWidth="1.7976931348623157E308" promptText="Contact Number" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" /><HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" GridPane.columnIndex="4">
+<children>
+<Button mnemonicParsing="false" style="-fx-background-color: transperant;" styleClass="plus-button">
+<graphic><ImageView fitHeight="44.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@images/plus.png" />
+</image></ImageView>
+</graphic></Button>
+<Button mnemonicParsing="false" style="-fx-background-color: transperant;" styleClass="close-button">
+<graphic><ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../images/close.png" />
+</image></ImageView>
+</graphic></Button>
+</children>
+</HBox><TextField fx:id="txtStdIsd2" promptText="STD/ISD2" GridPane.columnIndex="2" /><TextField fx:id="txtContactNumber2" promptText="Contact Number2" GridPane.columnIndex="3" />
+</children>
+</GridPane><HBox alignment="CENTER_RIGHT" prefWidth="200.0" style="-fx-padding: 2 0 2 0;">
+<children><Button fx:id="btnSave" mnemonicParsing="false" text="Save" />
+</children></HBox>
+</children>
+</VBox>
+</children>
+</AnchorPane>

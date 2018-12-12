@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="77.0" prefHeight="105.0" prefWidth="275.0" style="-fx-border-color: grey; -fx-padding: 3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.enquiry.appointment.attendance.FXMLMeetingListController">
+    <stylesheets>
+        <URL value="@fxmleventsforanchor.css" />
+    </stylesheets>
+<children><Label fx:id="lblEventNames" layoutX="28.0" layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="317.0" prefHeight="22.0" prefWidth="98.0" text=" Meeting Name " AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="200.0" />
+<Label fx:id="lblStartDates" layoutX="13.0" layoutY="57.0" prefHeight="22.0" prefWidth="94.0" text="Start Date          " AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="192.0" />
+<Label fx:id="lblEndDates" layoutX="16.0" layoutY="78.0" prefHeight="22.0" prefWidth="86.0" text="End Date        " AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="199.0" /><Label fx:id="lblEventName" layoutX="109.0" layoutY="7.0" maxHeight="1.7976931348623157E308" prefHeight="34.0" prefWidth="193.0" text="fdddddddddddddddd hgfhfggfj hgfhgfh" wrapText="true" /><Label fx:id="lblStartDate" layoutX="109.0" layoutY="59.0" prefHeight="17.0" prefWidth="193.0" /><Label fx:id="lblEndDate" layoutX="109.0" layoutY="82.0" prefHeight="17.0" prefWidth="193.0" /><Label layoutX="100.0048828125" layoutY="6.0" text=":" /><Label layoutX="98.0" layoutY="59.0" prefHeight="17.0" prefWidth="3.0" text=":" /><Label layoutX="98.0" layoutY="83.0" text=":" />
+</children>
+</AnchorPane>

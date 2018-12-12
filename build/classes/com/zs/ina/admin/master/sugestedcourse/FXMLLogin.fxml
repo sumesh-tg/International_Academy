@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="1141.0" styleClass="mainFxmlClass,gradient1" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zs.ina.admin.master.sugestedcourse.FXMLLoginController">
+    <children><GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <columnConstraints>
+    <ColumnConstraints minWidth="100.0" prefWidth="400.0" />
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children>
+<VBox layoutX="34.0" layoutY="26.5" prefHeight="449.0" prefWidth="500.0" spacing="10.0" style="-fx-border-color: #08468F;" GridPane.vgrow="ALWAYS">
+<children>
+<HBox alignment="CENTER" layoutX="133.0048828125" layoutY="26.5" prefHeight="33.0" style="-fx-background-color: #08468F;">
+<children><Label layoutX="133.0048828125" layoutY="26.5" styleClass="fonttitlelbl" text="Suggested Course" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font></Label>
+</children>
+</HBox>
+<HBox layoutX="37.0" layoutY="86.0" spacing="22.0">
+<children>
+                <Label layoutX="37.0" layoutY="89.0" prefHeight="20.0" prefWidth="55.0" styleClass="fontlbl" text="Country">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <HBox fx:id="userNameHbox" layoutX="166.0" layoutY="86.0" /><ComboBox fx:id="countryCmb" prefHeight="25.0" prefWidth="163.0" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="38.0" layoutY="123.0" spacing="30.0">
+<children>
+                <Label layoutX="38.0" layoutY="127.0" prefWidth="69.0" styleClass="fontlbl" text="Location">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="locationTxt" layoutX="167.0" layoutY="123.0" prefHeight="25.0" prefWidth="163.0" styleClass="fontlbl" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="38.0048828125" layoutY="158.0" spacing="30.0">
+<children>
+                <Label layoutX="38.0048828125" layoutY="161.5" prefWidth="69.0" styleClass="fontlbl" text="University">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label><ComboBox fx:id="universityCmb" prefHeight="25.0" prefWidth="164.0" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="38.0146484375" layoutY="195.0" spacing="30.0">
+<children>
+                <Label layoutX="38.0146484375" layoutY="198.5" prefWidth="69.0" styleClass="fontlbl" text="Level">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="levelCmb" layoutX="166.0" layoutY="195.0" prefHeight="25.0" prefWidth="163.0" styleClass="gradient1,fontlbl" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="35.71484375" layoutY="233.0" spacing="30.0">
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="35.71484375" layoutY="267.0" spacing="30.0">
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox layoutX="34.0" layoutY="301.0" prefHeight="28.0" prefWidth="378.0" spacing="30.0">
+<children>
+                <Label layoutX="34.0" layoutY="305.0" prefWidth="69.0" styleClass="fontlbl" text="Course">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="courseCmb" layoutX="166.0" layoutY="301.0" prefHeight="25.0" prefWidth="163.0" styleClass="gradient1,fontlbl" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+<HBox alignment="CENTER_RIGHT" layoutX="165.0" layoutY="340.0" spacing="10.0">
+<children>
+                <Button fx:id="saveBtn" layoutX="250.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="30.0" prefWidth="79.0" styleClass="gradient1,fontlbl" text="Save">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button><Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#handleDeleteBtn" prefHeight="30.0" text="Delete">
+<font>
+<Font size="14.0" />
+</font></Button>
+                <Button fx:id="clearBtn" layoutX="165.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleClearBtn" prefHeight="26.0" prefWidth="68.0" styleClass="gradient1,fontlbl" text="Cancel">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+</children>
+<VBox.margin>
+<Insets right="5.0" />
+</VBox.margin>
+</HBox><HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="388.0">
+<VBox.margin>
+<Insets right="5.0" />
+</VBox.margin></HBox>
+</children>
+<GridPane.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</GridPane.margin>
+</VBox>
+<VBox layoutX="6.0" layoutY="25.0" prefHeight="449.0" prefWidth="408.0" style="-fx-border-color: #08468F;" GridPane.columnIndex="1" GridPane.hgrow="SOMETIMES" GridPane.vgrow="ALWAYS">
+<children>
+<HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="25.0" prefHeight="33.0" spacing="10.0" style="-fx-background-color: #08468F;">
+<children><TextField fx:id="searchTxt" layoutX="6.0" layoutY="26.0" prefHeight="25.0" prefWidth="386.0">
+<HBox.margin>
+<Insets left="5.0" />
+</HBox.margin></TextField><ImageView fitHeight="25.0" fitWidth="33.0" layoutX="393.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../images/tabicon_search.png" />
+</image></ImageView>
+</children>
+</HBox><TableView fx:id="loginTableView" layoutX="6.0" layoutY="66.0" onKeyReleased="#handleLoginTableViewKeyReleased" onMouseClicked="#handleLoginTableView" prefHeight="404.0" prefWidth="539.0" styleClass="gradient1,tablefont" VBox.vgrow="ALWAYS">
+  <columns>
+    <TableColumn fx:id="countryColumn" text="Country" />
+    <TableColumn fx:id="locationColumn" prefWidth="123.0" text="Location" /><TableColumn fx:id="universityColumn" prefWidth="154.0" text="University" /><TableColumn fx:id="levelColumn" prefWidth="179.0" text="Level" /><TableColumn fx:id="courseColumn" prefWidth="182.0" text="Course" />
+  </columns>
+<VBox.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</VBox.margin>
+</TableView>
+</children>
+<GridPane.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</GridPane.margin>
+</VBox>
+</children>
+</GridPane>
+    </children>
+</AnchorPane>
